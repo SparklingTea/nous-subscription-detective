@@ -1,0 +1,347 @@
+# How the top UK consumer subscriptions are actually cancelled.
+#
+# method: online | online_2fa | app_store | in_app | chat | phone | email
+# automatable: yes | with_handoff (agent can do it but needs a member-supplied code or consent) | no
+# confidence: how sure the desk research is. Flows change often: anything below "high" should be
+#   re-walked by hand (or by the browser agent in record mode) before an agent runs it on a member's behalf.
+#
+# Cross-cutting rule: the *billing channel* decides the route, not the brand. Netflix billed through
+# APPLE.COM/BILL is cancelled at Apple; Spotify billed through PAYPAL can also be stopped in PayPal's
+# automatic-payments page. The detector records channel per stream for exactly this reason.
+
+netflix:
+  name: Netflix
+  method: online
+  route: netflix.com > Account > Cancel membership > Finish cancellation
+  notice: none; access runs to end of billing period
+  dark_patterns: []
+  gotchas: ["If billed via Apple, Google, Sky or Virgin, cancel with that partner instead"]
+  automatable: "yes"
+  automation: browser agent; login may trigger an emailed sign-in code
+  confidence: high
+
+amazon_prime:
+  name: Amazon Prime
+  method: online
+  route: amazon.co.uk > Account > Prime membership > Manage > End membership > several confirmation pages
+  notice: none; unused memberships may be eligible for a refund
+  dark_patterns: ["multi-page retention flow", "Keep my benefits styled as the primary button", "benefit-loss reminders", "remind-me-later decoy"]
+  gotchas: ["Prime Video Channels are separate subscriptions and need cancelling on their own"]
+  automatable: "yes"
+  automation: browser agent that must pick "continue to cancel" over styled retention buttons (see mock flow)
+  confidence: high
+
+disney_plus:
+  name: Disney+
+  method: online
+  route: disneyplus.com (web, not the TV app) > Account > Subscription > Cancel subscription
+  notice: none
+  dark_patterns: ["exit survey"]
+  gotchas: ["Can be billed via Apple, Google, Amazon or Sky"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: high
+
+spotify:
+  name: Spotify
+  method: online
+  route: spotify.com/account (not the app) > Manage your plan > Cancel Premium
+  notice: none; reverts to Free at period end
+  dark_patterns: ["cancel option buried under \"change plan", "retention discount"]
+  gotchas: ["Family/Duo plan manager must cancel", "partner billing (e.g. mobile network) cancels with partner"]
+  automatable: "yes"
+  automation: browser agent; PayPal-billed members can alternatively stop the automatic payment in PayPal
+  confidence: high
+
+apple:
+  name: Apple (App Store, Apple Music, iCloud+, Apple TV+, third-party in-app subscriptions)
+  method: online_2fa
+  route: iPhone Settings > [name] > Subscriptions > [subscription] > Cancel; or on the web via the Apple Account / Report a Problem pages
+  notice: none; runs to end of period
+  dark_patterns: ["subscriptions hidden deep in Settings", "Apple One bundles hide which product is billed"]
+  gotchas: ["Statement only shows APPLE.COM/BILL: product has to be inferred from price, iCloud+ is a downgrade not a cancel"]
+  automatable: with_handoff
+  automation: browser agent signs in, pauses for the 2FA code Apple sends to the member's device, member replies with it, agent continues
+  confidence: medium
+
+google_play:
+  name: Google Play (Google One, YouTube Premium if bought in-app, Android app subscriptions)
+  method: online_2fa
+  route: play.google.com > Payments & subscriptions > Subscriptions > Cancel; Google One also at one.google.com
+  notice: none
+  dark_patterns: ["pause offered before cancel"]
+  gotchas: ["Google One downgrade may leave storage over quota"]
+  automatable: with_handoff
+  automation: browser agent with Google sign-in challenge hand-off
+  confidence: medium
+
+youtube_premium:
+  name: YouTube Premium
+  method: online
+  route: youtube.com/paid_memberships > Manage membership > Deactivate
+  notice: none
+  dark_patterns: ["pause offered instead of cancel"]
+  gotchas: ["If bought through Apple, cancel at Apple"]
+  automatable: "yes"
+  automation: browser agent (Google sign-in may need hand-off)
+  confidence: high
+
+now:
+  name: NOW
+  method: online
+  route: nowtv.com > My Account > Memberships & Passes > Cancel
+  notice: until end of the current month
+  dark_patterns: ["retention offers", "discounted months"]
+  gotchas: ["Each Membership (Entertainment, Cinema, Sport, Boost) is cancelled separately"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: medium
+
+sky:
+  name: Sky TV
+  method: phone
+  route: Call Sky's cancellations line or use the online "leaving Sky" route; agent offers retention deals
+  notice: 31 days
+  dark_patterns: ["retention call", "minimum-term early termination charges"]
+  gotchas: ["Bundled broadband/phone may re-price when TV is removed", "early termination charges inside minimum term"]
+  automatable: "no"
+  automation: generate the notice + call script with account details and the member's walk-away price
+  confidence: medium
+
+puregym:
+  name: PureGym
+  method: online
+  route: Members' area > Membership > Cancel membership
+  notice: cancel before next payment date
+  dark_patterns: ["freeze offered first"]
+  gotchas: ["Promotional joining offers can carry minimum terms"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: medium
+
+the_gym_group:
+  name: The Gym Group
+  method: online
+  route: Members' area > My membership > Cancel
+  notice: none (no contract)
+  dark_patterns: []
+  gotchas: []
+  automatable: "yes"
+  automation: browser agent
+  confidence: medium
+
+audible:
+  name: Audible
+  method: online
+  route: audible.co.uk (desktop site, not the app) > Account details > Cancel membership
+  notice: none
+  dark_patterns: ["pause and discounted-plan offers", "lose-your-credits warning"]
+  gotchas: ["Unused credits are lost on cancellation: spend them first"]
+  automatable: with_handoff
+  automation: browser agent; guardrail stops and asks the member if unused credits exist
+  confidence: high
+
+microsoft_365:
+  name: Microsoft 365
+  method: online_2fa
+  route: account.microsoft.com/services > Manage > Cancel subscription (or turn off recurring billing)
+  notice: none; recent annual renewals may be refundable
+  dark_patterns: []
+  gotchas: ["Turning off recurring billing lets the year run out", "immediate cancel may refund"]
+  automatable: with_handoff
+  automation: browser agent with Microsoft account sign-in hand-off
+  confidence: high
+
+xbox_game_pass:
+  name: Xbox Game Pass
+  method: online_2fa
+  route: account.microsoft.com/services > Game Pass > Manage > Cancel
+  notice: none
+  dark_patterns: []
+  gotchas: []
+  automatable: with_handoff
+  automation: same flow as Microsoft 365
+  confidence: high
+
+playstation_plus:
+  name: PlayStation Plus
+  method: online_2fa
+  route: PlayStation account management > Subscriptions management > Turn off auto-renew
+  notice: none
+  dark_patterns: []
+  gotchas: ["Annual plans keep running until expiry"]
+  automatable: with_handoff
+  automation: browser agent with PSN 2-step verification hand-off
+  confidence: medium
+
+adobe:
+  name: Adobe Creative Cloud
+  method: online
+  route: account.adobe.com > Plans > Manage plan > Cancel your plan > reason survey > offers > review
+  notice: 14-day full refund window, then annual plans billed monthly charge an early termination fee
+  dark_patterns: ["early termination fee on \"annual", "paid monthly\" disclosed late", "multiple retention offers"]
+  gotchas: ["Cheaper to switch off auto-renew and let the commitment end near the anniversary"]
+  automatable: with_handoff
+  automation: browser agent; hard rule halts if any fee appears and hands the decision to the member
+  confidence: high
+
+chatgpt:
+  name: ChatGPT Plus
+  method: online
+  route: chatgpt.com > Settings > Account (or Subscription) > Manage > Cancel plan
+  notice: none
+  dark_patterns: []
+  gotchas: ["If bought in the iOS app, cancel via Apple"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: high
+
+deliveroo_plus:
+  name: Deliveroo Plus
+  method: in_app
+  route: Deliveroo app or web > Account > Plus > Manage / Cancel membership
+  notice: none
+  dark_patterns: ["benefit reminders"]
+  gotchas: ["Some bank card perks bundle Plus: check before cancelling"]
+  automatable: "yes"
+  automation: browser agent on web account
+  confidence: medium
+
+uber_one:
+  name: Uber One
+  method: in_app
+  route: Uber app > Account > Uber One > Manage membership > End membership
+  notice: none
+  dark_patterns: ["multi-screen retention flow"]
+  gotchas: []
+  automatable: with_handoff
+  automation: app-only flows need a mobile automation surface; fallback is a guided walk-through in chat
+  confidence: medium
+
+club_pret:
+  name: Club Pret
+  method: in_app
+  route: Pret app > Account > Club Pret > Cancel subscription
+  notice: none
+  dark_patterns: []
+  gotchas: []
+  automatable: with_handoff
+  automation: app-only; guided walk-through
+  confidence: medium
+
+hellofresh:
+  name: HelloFresh
+  method: online
+  route: hellofresh.co.uk > Account settings > Plan settings > Cancel plan > several retention steps
+  notice: before the weekly cut-off (several days before the next delivery)
+  dark_patterns: ["pause and discount offers at each step", "long reason flow", "cut-off timing"]
+  gotchas: ["Miss the cut-off and the next box is charged"]
+  automatable: "yes"
+  automation: browser agent; schedule the run before the cut-off
+  confidence: medium
+
+gousto:
+  name: Gousto
+  method: online
+  route: gousto.co.uk > My account > Subscription settings > Pause or cancel
+  notice: before weekly cut-off
+  dark_patterns: ["pause offered first"]
+  gotchas: ["Cut-off timing"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: medium
+
+paramount_plus:
+  name: Paramount+
+  method: online
+  route: paramountplus.com > Account > Cancel subscription
+  notice: none
+  dark_patterns: []
+  gotchas: ["Often billed via Sky, Apple or Amazon Channels"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: medium
+
+dazn:
+  name: DAZN
+  method: online
+  route: dazn.com > My Account > Subscription > Cancel
+  notice: annual plans paid monthly can't be ended early
+  dark_patterns: ["annual commitment paid monthly"]
+  gotchas: ["Check plan type before promising savings"]
+  automatable: "yes"
+  automation: browser agent; guardrail on remaining-commitment
+  confidence: low
+
+the_times:
+  name: The Times & Sunday Times
+  method: phone
+  route: Customer service by phone or live chat; online cancellation availability varies by plan
+  notice: varies by plan
+  dark_patterns: ["retention call", "introductory pricing that steps up"]
+  gotchas: []
+  automatable: "no"
+  automation: generate the cancellation email/notice and a call script
+  confidence: low
+
+the_telegraph:
+  name: The Telegraph
+  method: online
+  route: My Account > Subscription > Cancel (or customer service)
+  notice: varies by plan
+  dark_patterns: ["retention offers"]
+  gotchas: []
+  automatable: "yes"
+  automation: browser agent
+  confidence: low
+
+patreon:
+  name: Patreon
+  method: online
+  route: patreon.com > Memberships > Edit > Cancel membership
+  notice: none
+  dark_patterns: []
+  gotchas: ["Bought in the iOS app = cancel via Apple"]
+  automatable: "yes"
+  automation: browser agent
+  confidence: high
+
+substack:
+  name: Substack (paid newsletters)
+  method: online
+  route: substack.com > Settings > Subscriptions > [publication] > Cancel
+  notice: none
+  dark_patterns: []
+  gotchas: []
+  automatable: "yes"
+  automation: browser agent
+  confidence: high
+
+duolingo:
+  name: Duolingo Super
+  method: app_store
+  route: Usually billed by Apple or Google, so cancel there
+  notice: none
+  dark_patterns: []
+  gotchas: []
+  automatable: with_handoff
+  automation: platform route (Apple / Google Play)
+  confidence: high
+
+# Fallbacks that work regardless of merchant.
+_fallbacks:
+  card_cpa:
+    name: Stop a recurring card payment at the bank
+    note: >
+      Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment
+      authority by telling their bank or card issuer; the bank must stop future payments. This stops the
+      money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.
+  direct_debit:
+    name: Cancel a Direct Debit
+    note: >
+      Cancelling a mandate at the bank stops collection but does not end the contract; the member may still owe.
+      Use for clearly ended services (gym already cancelled, still collecting) and pair with the Direct Debit Guarantee
+      for refunds of wrong collections.
+  paypal:
+    name: PayPal automatic payments
+    note: PayPal > Settings > Payments > Manage automatic payments > Cancel. Works for PAYPAL * descriptors.

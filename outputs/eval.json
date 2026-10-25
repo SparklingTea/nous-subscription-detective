@@ -1,0 +1,332 @@
+{
+  "main": {
+    "merchant": {
+      "accuracy": 0.815,
+      "n": 967,
+      "accuracy_catalogue": 1.0,
+      "accuracy_long_tail": 0.363,
+      "distinct_merchants": 42,
+      "distinct_merchants_correct": 40,
+      "errors": [
+        {
+          "label": "Gail's",
+          "predicted": "Gails Bakery",
+          "count": 167
+        },
+        {
+          "label": "Savings transfer",
+          "predicted": "Transfer To Savings",
+          "count": 12
+        }
+      ]
+    },
+    "subscription_detection": {
+      "tp": 21,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "kind_confusion": [
+      {
+        "truth": "bill",
+        "predicted": "bill",
+        "count": 6
+      },
+      {
+        "truth": "other",
+        "predicted": "other",
+        "count": 3
+      },
+      {
+        "truth": "subscription",
+        "predicted": "subscription",
+        "count": 21
+      }
+    ],
+    "cadence_accuracy": 1.0,
+    "active_accuracy": 1.0,
+    "flags": {
+      "price_rise": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positives": [],
+        "false_negatives": []
+      },
+      "duplicate": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positives": [],
+        "false_negatives": []
+      },
+      "trial_converted": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positives": [],
+        "false_negatives": []
+      },
+      "forgotten": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "false_positives": [],
+        "false_negatives": [
+          "NOW (7-day trial for one series, never cancelled)"
+        ]
+      }
+    },
+    "summary": {
+      "actions": [
+        {
+          "stream": "HelloFresh|direct|0",
+          "label": "HelloFresh",
+          "action": "confirm_keep",
+          "annual": 2339.48,
+          "expected": 0.0,
+          "method": "online",
+          "automatable": "yes",
+          "why": "started 2026-06-06 after a trial/intro offer"
+        },
+        {
+          "stream": "Apple|apple|1",
+          "label": "Apple (Apple Music)",
+          "action": "cancel",
+          "annual": 131.88,
+          "expected": 118.69,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "duplicate: two music services; started as a free trial / intro offer; billed via apple, easy to miss on a statement"
+        },
+        {
+          "stream": "NOW|direct|0",
+          "label": "NOW",
+          "action": "confirm_keep",
+          "annual": 119.88,
+          "expected": 0.0,
+          "method": "online",
+          "automatable": "yes",
+          "why": "started 2026-02-17 after a trial/intro offer"
+        },
+        {
+          "stream": "Audible|direct|0",
+          "label": "Audible",
+          "action": "confirm_keep",
+          "annual": 95.88,
+          "expected": 0.0,
+          "method": "online",
+          "automatable": "with_handoff",
+          "why": "started 2026-05-03 after a trial/intro offer"
+        },
+        {
+          "stream": "Netflix|paypal|0",
+          "label": "Netflix",
+          "action": "cancel",
+          "annual": 71.88,
+          "expected": 68.29,
+          "method": "online",
+          "automatable": "yes",
+          "why": "duplicate: Netflix is being paid for twice; billed via paypal, easy to miss on a statement"
+        },
+        {
+          "stream": "Deliveroo Plus|direct|0",
+          "label": "Deliveroo Plus",
+          "action": "cancel",
+          "annual": 41.88,
+          "expected": 35.6,
+          "method": "in_app",
+          "automatable": "yes",
+          "why": "no Deliveroo spend since 2026-04-26"
+        },
+        {
+          "stream": "Google One|google_play|0",
+          "label": "Google One",
+          "action": "cancel",
+          "annual": 19.08,
+          "expected": 17.17,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "duplicate: two cloud storage services; billed via google_play, easy to miss on a statement"
+        }
+      ],
+      "price_rises": [
+        {
+          "stream": "Netflix|direct|0",
+          "label": "Netflix",
+          "kind": "subscription",
+          "old": 12.99,
+          "new": 14.99,
+          "pct": 15.4,
+          "annual_increase": 24.0,
+          "since": "2026-06-07"
+        },
+        {
+          "stream": "Spotify|direct|0",
+          "label": "Spotify",
+          "kind": "subscription",
+          "old": 11.99,
+          "new": 12.99,
+          "pct": 8.3,
+          "annual_increase": 12.0,
+          "since": "2026-04-22"
+        },
+        {
+          "stream": "Disney+|direct|0",
+          "label": "Disney+",
+          "kind": "subscription",
+          "old": 4.99,
+          "new": 5.99,
+          "pct": 20.0,
+          "annual_increase": 12.0,
+          "since": "2026-09-11"
+        },
+        {
+          "stream": "Council Tax|direct|0",
+          "label": "Council Tax",
+          "kind": "bill",
+          "old": 152.4,
+          "new": 160.1,
+          "pct": 5.1,
+          "annual_increase": 92.4,
+          "since": "2026-04-15"
+        },
+        {
+          "stream": "Virgin Media|direct|0",
+          "label": "Virgin Media",
+          "kind": "bill",
+          "old": 38.0,
+          "new": 40.5,
+          "pct": 6.6,
+          "annual_increase": 30.0,
+          "since": "2026-04-13"
+        },
+        {
+          "stream": "EE|direct|0",
+          "label": "EE",
+          "kind": "bill",
+          "old": 22.0,
+          "new": 23.2,
+          "pct": 5.5,
+          "annual_increase": 14.4,
+          "since": "2026-04-08"
+        },
+        {
+          "stream": "TV Licence|direct|0",
+          "label": "TV Licence",
+          "kind": "bill",
+          "old": 14.54,
+          "new": 14.95,
+          "pct": 2.8,
+          "annual_increase": 4.92,
+          "since": "2026-04-01"
+        }
+      ],
+      "active_subscriptions": 20,
+      "annual_subscription_spend": 4936.59,
+      "back_in_pocket_identified": 264.72,
+      "back_in_pocket_expected": 239.75,
+      "price_rise_exposure": 189.72,
+      "assumptions": {
+        "success_rate_by_route": {
+          "online": 0.95,
+          "online_2fa": 0.9,
+          "app_store": 0.9,
+          "in_app": 0.85,
+          "email": 0.8,
+          "chat": 0.8,
+          "phone": 0.7,
+          "None": 0.6
+        },
+        "horizon": "next 12 months at latest price"
+      }
+    }
+  },
+  "forgotten_thresholds": {
+    "1": {
+      "tp": 5,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1": 0.769,
+      "false_positives": [
+        "Apple",
+        "Audible",
+        "HelloFresh"
+      ],
+      "false_negatives": []
+    },
+    "2": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.889,
+      "false_positives": [],
+      "false_negatives": [
+        "NOW (7-day trial for one series, never cancelled)"
+      ]
+    },
+    "3": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "false_positives": [],
+      "false_negatives": [
+        "NOW (7-day trial for one series, never cancelled)",
+        "Deliveroo Plus (No Deliveroo orders since May)"
+      ]
+    }
+  },
+  "seeds": {
+    "subscription precision": {
+      "mean": 0.991,
+      "min": 0.955
+    },
+    "subscription recall": {
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "merchant accuracy": {
+      "mean": 0.8158,
+      "min": 0.806
+    },
+    "price_rise F1": {
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "duplicate F1": {
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "trial_converted F1": {
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "forgotten F1": {
+      "mean": 0.889,
+      "min": 0.889
+    }
+  }
+}

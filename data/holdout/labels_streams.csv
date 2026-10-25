@@ -1,0 +1,29 @@
+stream_id,merchant,kind,cadence,active,price_rise,duplicate,trial_converted,forgotten,note
+mortgage,Nationwide,other,monthly,True,False,False,False,False,
+cleaner,M Kowalski,other,monthly,True,False,False,False,False,Bank transfer to cleaner
+ctax,Council Tax,bill,monthly,True,True,False,False,False,Descriptor lacks 'council tax'
+energy,British Gas,bill,monthly,True,False,False,False,False,
+homecare,British Gas,bill,monthly,True,False,False,False,False,"Boiler cover, same merchant as energy"
+bt,BT,bill,monthly,True,True,False,False,False,
+o2,O2,bill,monthly,True,False,False,False,False,
+sky,Sky,subscription,monthly,True,True,False,False,False,
+prime,Amazon Prime,subscription,monthly,True,True,False,False,False,
+kindle,Amazon Kindle Unlimited,subscription,monthly,True,False,False,False,False,Shares the generic AMZN descriptor with shopping
+spotify,Spotify,subscription,monthly,True,False,False,False,False,Failed payment reversed and retried in May
+disney,Disney+,subscription,monthly,True,False,True,False,False,
+disney_apple,Apple,subscription,monthly,True,False,True,False,True,"Second Disney+ bought in-app on a child's iPad (statement just says Apple, £8.99)"
+roblox,Apple,subscription,monthly,True,False,False,False,False,Roblox Premium via Apple
+calm,Apple,subscription,annual,True,False,False,True,False,Calm annual after 7-day trial; single charge
+dropbox,Dropbox,subscription,monthly,True,False,True,False,True,Old Dropbox Plus alongside Google One
+google_one,Google One,subscription,monthly,True,False,True,False,False,
+yt,YouTube Premium,subscription,monthly,True,False,False,False,False,Family plan; descriptor lacks 'Premium'
+duolingo,Duolingo,subscription,annual,True,False,False,False,False,"Annual via Google Play, single charge"
+psplus,PlayStation Plus,subscription,monthly,True,False,False,False,True,Child stopped playing in spring: no signal in bank data
+paramount,Paramount+,subscription,monthly,True,False,False,True,False,
+uber_one,Uber One,subscription,monthly,True,False,False,False,False,"Descriptor is 'UBER *ONE', not 'UBER ONE'"
+deliveroo_plus,Deliveroo Plus,subscription,monthly,True,False,False,True,False,Descriptor truncated by the bank
+thegym,The Gym Group,subscription,monthly,True,False,False,False,False,Trades as THE GYM LTD
+nyt,New York Times,subscription,monthly,True,False,False,True,False,USD-billed intro rate; not in catalogue
+klarna,Klarna,other,monthly,False,False,False,False,False,"Pay-in-3 instalments: fixed monthly, not a subscription"
+klarna2,Klarna,other,monthly,True,False,False,False,False,BNPL instalments still running
+football,Junior Football Club,other,weekly,True,False,False,False,False,Pay-as-you-go weekly session fee

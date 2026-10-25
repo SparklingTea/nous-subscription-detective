@@ -1,0 +1,1789 @@
+{
+  "period": {
+    "start": "2025-10-01",
+    "end": "2026-10-20",
+    "transactions": 967
+  },
+  "streams": [
+    {
+      "id": "HelloFresh|direct|0",
+      "merchant": "HelloFresh",
+      "label": "HelloFresh",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "meal_kit",
+      "known_merchant": true,
+      "cadence": "weekly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 18,
+      "first": "2026-06-06",
+      "last": "2026-10-17",
+      "latest_amount": 44.99,
+      "annual_cost": 2339.48,
+      "flags": {
+        "trial_converted": {
+          "first_charge": "2026-06-06",
+          "intro_price": true
+        }
+      },
+      "forgotten_score": 1,
+      "cancel": {
+        "key": "hellofresh",
+        "name": "HelloFresh",
+        "method": "online",
+        "route": "hellofresh.co.uk > Account settings > Plan settings > Cancel plan > several retention steps",
+        "automatable": "yes",
+        "dark_patterns": [
+          "pause and discount offers at each step",
+          "long reason flow",
+          "cut-off timing"
+        ],
+        "gotchas": [
+          "Miss the cut-off and the next box is charged"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00614",
+        "t00632",
+        "t00652",
+        "t00668",
+        "t00689",
+        "t00707",
+        "t00726",
+        "t00752",
+        "t00774",
+        "t00797",
+        "t00816",
+        "t00827",
+        "t00848",
+        "t00868",
+        "t00904",
+        "t00926",
+        "t00941",
+        "t00958"
+      ],
+      "descriptions": [
+        "HELLOFRESH"
+      ]
+    },
+    {
+      "id": "Ironworks Climbing|direct|0",
+      "merchant": "Ironworks Climbing",
+      "label": "Ironworks Climbing",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": null,
+      "known_merchant": false,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.77,
+      "n": 13,
+      "first": "2025-10-01",
+      "last": "2026-10-01",
+      "latest_amount": 52.0,
+      "annual_cost": 624.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": null,
+        "name": null,
+        "method": null,
+        "route": null,
+        "automatable": null,
+        "dark_patterns": null,
+        "gotchas": null,
+        "confidence": null,
+        "fallback": "Cancelling a mandate at the bank stops collection but does not end the contract; the member may still owe. Use for clearly ended services (gym already cancelled, still collecting) and pair with the Direct Debit Guarantee for refunds of wrong collections.\n"
+      },
+      "txn_ids": [
+        "t00002",
+        "t00074",
+        "t00143",
+        "t00211",
+        "t00296",
+        "t00367",
+        "t00438",
+        "t00512",
+        "t00595",
+        "t00675",
+        "t00758",
+        "t00831",
+        "t00917"
+      ],
+      "descriptions": [
+        "IRONWORKS CLIMBING LTD"
+      ]
+    },
+    {
+      "id": "PureGym|direct|0",
+      "merchant": "PureGym",
+      "label": "PureGym",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "fitness",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-01",
+      "last": "2026-10-01",
+      "latest_amount": 24.99,
+      "annual_cost": 299.88,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "puregym",
+        "name": "PureGym",
+        "method": "online",
+        "route": "Members' area > Membership > Cancel membership",
+        "automatable": "yes",
+        "dark_patterns": [
+          "freeze offered first"
+        ],
+        "gotchas": [
+          "Promotional joining offers can carry minimum terms"
+        ],
+        "confidence": "medium",
+        "fallback": "Cancelling a mandate at the bank stops collection but does not end the contract; the member may still owe. Use for clearly ended services (gym already cancelled, still collecting) and pair with the Direct Debit Guarantee for refunds of wrong collections.\n"
+      },
+      "txn_ids": [
+        "t00004",
+        "t00078",
+        "t00145",
+        "t00214",
+        "t00298",
+        "t00370",
+        "t00440",
+        "t00515",
+        "t00597",
+        "t00677",
+        "t00761",
+        "t00834",
+        "t00920"
+      ],
+      "descriptions": [
+        "PUREGYM LTD"
+      ]
+    },
+    {
+      "id": "ChatGPT|direct|0",
+      "merchant": "ChatGPT",
+      "label": "ChatGPT",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "ai",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-04",
+      "last": "2026-10-04",
+      "latest_amount": 15.83,
+      "annual_cost": 189.96,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "chatgpt",
+        "name": "ChatGPT Plus",
+        "method": "online",
+        "route": "chatgpt.com > Settings > Account (or Subscription) > Manage > Cancel plan",
+        "automatable": "yes",
+        "dark_patterns": [],
+        "gotchas": [
+          "If bought in the iOS app, cancel via Apple"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00010",
+        "t00081",
+        "t00155",
+        "t00225",
+        "t00303",
+        "t00375",
+        "t00451",
+        "t00529",
+        "t00610",
+        "t00690",
+        "t00764",
+        "t00847",
+        "t00928"
+      ],
+      "descriptions": [
+        "OPENAI *CHATGPT SUBSCR",
+        "OPENAI *CHATGPT SUBSCR OPENAI.COM US"
+      ]
+    },
+    {
+      "id": "Netflix|direct|0",
+      "merchant": "Netflix",
+      "label": "Netflix",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "video",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-08",
+      "last": "2026-10-08",
+      "latest_amount": 14.99,
+      "annual_cost": 179.88,
+      "flags": {
+        "price_rise": {
+          "old": 12.99,
+          "new": 14.99,
+          "from": "2026-06-07",
+          "pct": 15.4,
+          "annual_increase": 24.0
+        },
+        "duplicate": {
+          "reason": "Netflix is being paid for twice",
+          "with": [
+            "Netflix"
+          ]
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "netflix",
+        "name": "Netflix",
+        "method": "online",
+        "route": "netflix.com > Account > Cancel membership > Finish cancellation",
+        "automatable": "yes",
+        "dark_patterns": [],
+        "gotchas": [
+          "If billed via Apple, Google, Sky or Virgin, cancel with that partner instead"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00020",
+        "t00088",
+        "t00163",
+        "t00235",
+        "t00313",
+        "t00383",
+        "t00457",
+        "t00536",
+        "t00617",
+        "t00698",
+        "t00771",
+        "t00859",
+        "t00937"
+      ],
+      "descriptions": [
+        "NETFLIX.COM 866-579-7172",
+        "NETFLIX.COM AMSTERDAM NL",
+        "Netflix.com"
+      ]
+    },
+    {
+      "id": "Coffee Collective|direct|0",
+      "merchant": "Coffee Collective",
+      "label": "Coffee Collective",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": null,
+      "known_merchant": false,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.77,
+      "n": 7,
+      "first": "2026-04-16",
+      "last": "2026-10-16",
+      "latest_amount": 14.0,
+      "annual_cost": 168.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": null,
+        "name": null,
+        "method": null,
+        "route": null,
+        "automatable": null,
+        "dark_patterns": null,
+        "gotchas": null,
+        "confidence": null,
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00478",
+        "t00557",
+        "t00641",
+        "t00722",
+        "t00798",
+        "t00882",
+        "t00957"
+      ],
+      "descriptions": [
+        "SQ *COFFEE COLLECTIVE"
+      ]
+    },
+    {
+      "id": "Spotify|direct|0",
+      "merchant": "Spotify",
+      "label": "Spotify",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "music",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 12,
+      "first": "2025-10-23",
+      "last": "2026-09-22",
+      "latest_amount": 12.99,
+      "annual_cost": 155.88,
+      "flags": {
+        "price_rise": {
+          "old": 11.99,
+          "new": 12.99,
+          "from": "2026-04-22",
+          "pct": 8.3,
+          "annual_increase": 12.0
+        },
+        "duplicate": {
+          "reason": "two music services",
+          "with": [
+            "Apple (Apple Music)"
+          ]
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "spotify",
+        "name": "Spotify",
+        "method": "online",
+        "route": "spotify.com/account (not the app) > Manage your plan > Cancel Premium",
+        "automatable": "yes",
+        "dark_patterns": [
+          "cancel option buried under \"change plan",
+          "retention discount"
+        ],
+        "gotchas": [
+          "Family/Duo plan manager must cancel",
+          "partner billing (e.g. mobile network) cancels with partner"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00050",
+        "t00118",
+        "t00195",
+        "t00279",
+        "t00349",
+        "t00417",
+        "t00492",
+        "t00569",
+        "t00658",
+        "t00734",
+        "t00817",
+        "t00897"
+      ],
+      "descriptions": [
+        "SPOTIFY UK",
+        "Spotify P3QORDJGFW8",
+        "Spotify P4CLRZJZCZV",
+        "Spotify PGBNKSF4HTZ"
+      ]
+    },
+    {
+      "id": "Apple|apple|1",
+      "merchant": "Apple",
+      "label": "Apple (Apple Music)",
+      "product": "Apple Music",
+      "channel": "apple",
+      "kind": "subscription",
+      "category": "platform",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 10,
+      "first": "2026-01-04",
+      "last": "2026-10-03",
+      "latest_amount": 10.99,
+      "annual_cost": 131.88,
+      "flags": {
+        "trial_converted": {
+          "first_charge": "2026-01-04",
+          "intro_price": false
+        },
+        "duplicate": {
+          "reason": "two music services",
+          "with": [
+            "Spotify"
+          ]
+        },
+        "forgotten": {
+          "score": 4,
+          "reasons": [
+            "duplicate: two music services",
+            "started as a free trial / intro offer",
+            "billed via apple, easy to miss on a statement"
+          ]
+        }
+      },
+      "forgotten_score": 4,
+      "cancel": {
+        "key": "apple",
+        "name": "Apple (App Store, Apple Music, iCloud+, Apple TV+, third-party in-app subscriptions)",
+        "method": "online_2fa",
+        "route": "iPhone Settings > [name] > Subscriptions > [subscription] > Cancel; or on the web via the Apple Account / Report a Problem pages",
+        "automatable": "with_handoff",
+        "dark_patterns": [
+          "subscriptions hidden deep in Settings",
+          "Apple One bundles hide which product is billed"
+        ],
+        "gotchas": [
+          "Statement only shows APPLE.COM/BILL: product has to be inferred from price, iCloud+ is a downgrade not a cancel"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00220",
+        "t00300",
+        "t00374",
+        "t00449",
+        "t00524",
+        "t00605",
+        "t00688",
+        "t00763",
+        "t00845",
+        "t00924"
+      ],
+      "descriptions": [
+        "APPLE.COM/BILL CORK IE",
+        "APPLE.COM/BILL ITUNES.COM"
+      ]
+    },
+    {
+      "id": "NOW|direct|0",
+      "merchant": "NOW",
+      "label": "NOW",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "video",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 9,
+      "first": "2026-02-17",
+      "last": "2026-10-16",
+      "latest_amount": 9.99,
+      "annual_cost": 119.88,
+      "flags": {
+        "trial_converted": {
+          "first_charge": "2026-02-17",
+          "intro_price": false
+        }
+      },
+      "forgotten_score": 1,
+      "cancel": {
+        "key": "now",
+        "name": "NOW",
+        "method": "online",
+        "route": "nowtv.com > My Account > Memberships & Passes > Cancel",
+        "automatable": "yes",
+        "dark_patterns": [
+          "retention offers",
+          "discounted months"
+        ],
+        "gotchas": [
+          "Each Membership (Entertainment, Cinema, Sport, Boost) is cancelled separately"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00338",
+        "t00406",
+        "t00479",
+        "t00561",
+        "t00644",
+        "t00721",
+        "t00802",
+        "t00885",
+        "t00956"
+      ],
+      "descriptions": [
+        "NOW TV LONDON GB",
+        "NOWTV.COM"
+      ]
+    },
+    {
+      "id": "Adobe|direct|0",
+      "merchant": "Adobe",
+      "label": "Adobe",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "software",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 12,
+      "first": "2025-10-27",
+      "last": "2026-09-28",
+      "latest_amount": 9.98,
+      "annual_cost": 119.76,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "adobe",
+        "name": "Adobe Creative Cloud",
+        "method": "online",
+        "route": "account.adobe.com > Plans > Manage plan > Cancel your plan > reason survey > offers > review",
+        "automatable": "with_handoff",
+        "dark_patterns": [
+          "early termination fee on \"annual",
+          "paid monthly\" disclosed late",
+          "multiple retention offers"
+        ],
+        "gotchas": [
+          "Cheaper to switch off auto-renew and let the commitment end near the anniversary"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00056",
+        "t00132",
+        "t00205",
+        "t00285",
+        "t00361",
+        "t00429",
+        "t00502",
+        "t00583",
+        "t00669",
+        "t00746",
+        "t00823",
+        "t00907"
+      ],
+      "descriptions": [
+        "ADOBE *ADOBE IE",
+        "ADOBE *PHOTOGPHY PLAN ADOBE.LY/ENIE"
+      ]
+    },
+    {
+      "id": "Audible|direct|0",
+      "merchant": "Audible",
+      "label": "Audible",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "audiobooks",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 6,
+      "first": "2026-05-03",
+      "last": "2026-10-03",
+      "latest_amount": 7.99,
+      "annual_cost": 95.88,
+      "flags": {
+        "trial_converted": {
+          "first_charge": "2026-05-03",
+          "intro_price": false
+        }
+      },
+      "forgotten_score": 1,
+      "cancel": {
+        "key": "audible",
+        "name": "Audible",
+        "method": "online",
+        "route": "audible.co.uk (desktop site, not the app) > Account details > Cancel membership",
+        "automatable": "with_handoff",
+        "dark_patterns": [
+          "pause and discounted-plan offers",
+          "lose-your-credits warning"
+        ],
+        "gotchas": [
+          "Unused credits are lost on cancellation: spend them first"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00525",
+        "t00602",
+        "t00684",
+        "t00756",
+        "t00841",
+        "t00925"
+      ],
+      "descriptions": [
+        "AUDIBLE LTD",
+        "AUDIBLE UK ADBL.CO/PYMT"
+      ]
+    },
+    {
+      "id": "Amazon Prime|direct|0",
+      "merchant": "Amazon Prime",
+      "label": "Amazon Prime",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "shopping_membership",
+      "known_merchant": true,
+      "cadence": "annual",
+      "cadence_inferred": true,
+      "regularity": 0.5,
+      "active": true,
+      "confidence": 0.62,
+      "n": 1,
+      "first": "2026-03-11",
+      "last": "2026-03-11",
+      "latest_amount": 95.0,
+      "annual_cost": 95.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "amazon_prime",
+        "name": "Amazon Prime",
+        "method": "online",
+        "route": "amazon.co.uk > Account > Prime membership > Manage > End membership > several confirmation pages",
+        "automatable": "yes",
+        "dark_patterns": [
+          "multi-page retention flow",
+          "Keep my benefits styled as the primary button",
+          "benefit-loss reminders",
+          "remind-me-later decoy"
+        ],
+        "gotchas": [
+          "Prime Video Channels are separate subscriptions and need cancelling on their own"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00390"
+      ],
+      "descriptions": [
+        "AMAZON PRIME*1QQ81XRZN"
+      ]
+    },
+    {
+      "id": "Netflix|paypal|0",
+      "merchant": "Netflix",
+      "label": "Netflix",
+      "product": null,
+      "channel": "paypal",
+      "kind": "subscription",
+      "category": "video",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-19",
+      "last": "2026-10-19",
+      "latest_amount": 5.99,
+      "annual_cost": 71.88,
+      "flags": {
+        "duplicate": {
+          "reason": "Netflix is being paid for twice",
+          "with": [
+            "Netflix"
+          ]
+        },
+        "forgotten": {
+          "score": 3,
+          "reasons": [
+            "duplicate: Netflix is being paid for twice",
+            "billed via paypal, easy to miss on a statement"
+          ]
+        }
+      },
+      "forgotten_score": 3,
+      "cancel": {
+        "key": "netflix",
+        "name": "Netflix",
+        "method": "online",
+        "route": "netflix.com > Account > Cancel membership > Finish cancellation",
+        "automatable": "yes",
+        "dark_patterns": [],
+        "gotchas": [
+          "If billed via Apple, Google, Sky or Virgin, cancel with that partner instead"
+        ],
+        "confidence": "high",
+        "fallback": "PayPal > Settings > Payments > Manage automatic payments > Cancel. Works for PAYPAL * descriptors."
+      },
+      "txn_ids": [
+        "t00042",
+        "t00112",
+        "t00186",
+        "t00264",
+        "t00340",
+        "t00410",
+        "t00485",
+        "t00565",
+        "t00649",
+        "t00727",
+        "t00805",
+        "t00888",
+        "t00963"
+      ],
+      "descriptions": [
+        "PAYPAL *NETFLIX COM",
+        "PAYPAL *NETFLIX.COM 35314369001"
+      ]
+    },
+    {
+      "id": "Disney+|direct|0",
+      "merchant": "Disney+",
+      "label": "Disney+",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "video",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 11,
+      "first": "2025-12-12",
+      "last": "2026-10-11",
+      "latest_amount": 5.99,
+      "annual_cost": 71.88,
+      "flags": {
+        "price_rise": {
+          "old": 4.99,
+          "new": 5.99,
+          "from": "2026-09-11",
+          "pct": 20.0,
+          "annual_increase": 12.0
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "disney_plus",
+        "name": "Disney+",
+        "method": "online",
+        "route": "disneyplus.com (web, not the TV app) > Account > Subscription > Cancel subscription",
+        "automatable": "yes",
+        "dark_patterns": [
+          "exit survey"
+        ],
+        "gotchas": [
+          "Can be billed via Apple, Google, Amazon or Sky"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00171",
+        "t00247",
+        "t00321",
+        "t00391",
+        "t00469",
+        "t00543",
+        "t00628",
+        "t00706",
+        "t00787",
+        "t00866",
+        "t00945"
+      ],
+      "descriptions": [
+        "DISNEY PLUS",
+        "DISNEYPLUS LONDON"
+      ]
+    },
+    {
+      "id": "Substack|direct|0",
+      "merchant": "Substack",
+      "label": "Substack",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "news",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 8,
+      "first": "2026-03-11",
+      "last": "2026-10-10",
+      "latest_amount": 5.0,
+      "annual_cost": 60.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "substack",
+        "name": "Substack (paid newsletters)",
+        "method": "online",
+        "route": "substack.com > Settings > Subscriptions > [publication] > Cancel",
+        "automatable": "yes",
+        "dark_patterns": [],
+        "gotchas": [],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00393",
+        "t00467",
+        "t00545",
+        "t00625",
+        "t00708",
+        "t00784",
+        "t00865",
+        "t00942"
+      ],
+      "descriptions": [
+        "SUBSTACK *THE BROWSER"
+      ]
+    },
+    {
+      "id": "Microsoft 365|direct|0",
+      "merchant": "Microsoft 365",
+      "label": "Microsoft 365",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "software",
+      "known_merchant": true,
+      "cadence": "annual",
+      "cadence_inferred": true,
+      "regularity": 0.5,
+      "active": true,
+      "confidence": 0.62,
+      "n": 1,
+      "first": "2025-11-20",
+      "last": "2025-11-20",
+      "latest_amount": 59.99,
+      "annual_cost": 59.99,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "microsoft_365",
+        "name": "Microsoft 365",
+        "method": "online_2fa",
+        "route": "account.microsoft.com/services > Manage > Cancel subscription (or turn off recurring billing)",
+        "automatable": "with_handoff",
+        "dark_patterns": [],
+        "gotchas": [
+          "Turning off recurring billing lets the year run out",
+          "immediate cancel may refund"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00114"
+      ],
+      "descriptions": [
+        "MICROSOFT*365 PERSONAL MSBILL.INFO"
+      ]
+    },
+    {
+      "id": "Patreon|direct|0",
+      "merchant": "Patreon",
+      "label": "Patreon",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "creator",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-02",
+      "last": "2026-10-01",
+      "latest_amount": 4.71,
+      "annual_cost": 56.52,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "patreon",
+        "name": "Patreon",
+        "method": "online",
+        "route": "patreon.com > Memberships > Edit > Cancel membership",
+        "automatable": "yes",
+        "dark_patterns": [],
+        "gotchas": [
+          "Bought in the iOS app = cancel via Apple"
+        ],
+        "confidence": "high",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00007",
+        "t00068",
+        "t00148",
+        "t00213",
+        "t00294",
+        "t00369",
+        "t00444",
+        "t00518",
+        "t00604",
+        "t00682",
+        "t00755",
+        "t00833",
+        "t00919"
+      ],
+      "descriptions": [
+        "PATREON* MEMBERSHIP",
+        "PATREON* MEMBERSHIP INTERNET"
+      ]
+    },
+    {
+      "id": "Deliveroo Plus|direct|0",
+      "merchant": "Deliveroo Plus",
+      "label": "Deliveroo Plus",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "delivery_membership",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-12",
+      "last": "2026-10-12",
+      "latest_amount": 3.49,
+      "annual_cost": 41.88,
+      "flags": {
+        "forgotten": {
+          "score": 2,
+          "reasons": [
+            "no Deliveroo spend since 2026-04-26"
+          ]
+        }
+      },
+      "forgotten_score": 2,
+      "cancel": {
+        "key": "deliveroo_plus",
+        "name": "Deliveroo Plus",
+        "method": "in_app",
+        "route": "Deliveroo app or web > Account > Plus > Manage / Cancel membership",
+        "automatable": "yes",
+        "dark_patterns": [
+          "benefit reminders"
+        ],
+        "gotchas": [
+          "Some bank card perks bundle Plus: check before cancelling"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00030",
+        "t00101",
+        "t00174",
+        "t00250",
+        "t00323",
+        "t00399",
+        "t00470",
+        "t00548",
+        "t00631",
+        "t00710",
+        "t00786",
+        "t00872",
+        "t00946"
+      ],
+      "descriptions": [
+        "DELIVEROO PLUS"
+      ]
+    },
+    {
+      "id": "Apple|apple|0",
+      "merchant": "Apple",
+      "label": "Apple (iCloud+ 200GB)",
+      "product": "iCloud+ 200GB",
+      "channel": "apple",
+      "kind": "subscription",
+      "category": "platform",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-15",
+      "last": "2026-10-14",
+      "latest_amount": 2.99,
+      "annual_cost": 35.88,
+      "flags": {
+        "duplicate": {
+          "reason": "two cloud storage services",
+          "with": [
+            "Google One"
+          ]
+        }
+      },
+      "forgotten_score": 1,
+      "cancel": {
+        "key": "apple",
+        "name": "Apple (App Store, Apple Music, iCloud+, Apple TV+, third-party in-app subscriptions)",
+        "method": "online_2fa",
+        "route": "iPhone Settings > [name] > Subscriptions > [subscription] > Cancel; or on the web via the Apple Account / Report a Problem pages",
+        "automatable": "with_handoff",
+        "dark_patterns": [
+          "subscriptions hidden deep in Settings",
+          "Apple One bundles hide which product is billed"
+        ],
+        "gotchas": [
+          "Statement only shows APPLE.COM/BILL: product has to be inferred from price, iCloud+ is a downgrade not a cancel"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00033",
+        "t00104",
+        "t00177",
+        "t00257",
+        "t00331",
+        "t00401",
+        "t00474",
+        "t00551",
+        "t00636",
+        "t00716",
+        "t00793",
+        "t00875",
+        "t00953"
+      ],
+      "descriptions": [
+        "APPLE.COM/BILL CORK IE",
+        "APPLE.COM/BILL ITUNES.COM"
+      ]
+    },
+    {
+      "id": "Google One|google_play|0",
+      "merchant": "Google One",
+      "label": "Google One",
+      "product": null,
+      "channel": "google_play",
+      "kind": "subscription",
+      "category": "cloud_storage",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-10",
+      "last": "2026-10-10",
+      "latest_amount": 1.59,
+      "annual_cost": 19.08,
+      "flags": {
+        "duplicate": {
+          "reason": "two cloud storage services",
+          "with": [
+            "Apple (iCloud+ 200GB)"
+          ]
+        },
+        "forgotten": {
+          "score": 3,
+          "reasons": [
+            "duplicate: two cloud storage services",
+            "billed via google_play, easy to miss on a statement"
+          ]
+        }
+      },
+      "forgotten_score": 3,
+      "cancel": {
+        "key": "google_play",
+        "name": "Google Play (Google One, YouTube Premium if bought in-app, Android app subscriptions)",
+        "method": "online_2fa",
+        "route": "play.google.com > Payments & subscriptions > Subscriptions > Cancel; Google One also at one.google.com",
+        "automatable": "with_handoff",
+        "dark_patterns": [
+          "pause offered before cancel"
+        ],
+        "gotchas": [
+          "Google One downgrade may leave storage over quota"
+        ],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00026",
+        "t00094",
+        "t00168",
+        "t00242",
+        "t00319",
+        "t00387",
+        "t00462",
+        "t00539",
+        "t00621",
+        "t00701",
+        "t00777",
+        "t00864",
+        "t00940"
+      ],
+      "descriptions": [
+        "GOOGLE *Google One",
+        "GOOGLE *Google One g.co/helppay#"
+      ]
+    },
+    {
+      "id": "Club Pret|direct|0",
+      "merchant": "Club Pret",
+      "label": "Club Pret",
+      "product": null,
+      "channel": "direct",
+      "kind": "subscription",
+      "category": "food_membership",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": false,
+      "confidence": 0.99,
+      "n": 6,
+      "first": "2025-10-06",
+      "last": "2026-03-05",
+      "latest_amount": 30.0,
+      "annual_cost": 360.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": {
+        "key": "club_pret",
+        "name": "Club Pret",
+        "method": "in_app",
+        "route": "Pret app > Account > Club Pret > Cancel subscription",
+        "automatable": "with_handoff",
+        "dark_patterns": [],
+        "gotchas": [],
+        "confidence": "medium",
+        "fallback": "Under the Payment Services Regulations a cardholder can withdraw consent for a continuous payment authority by telling their bank or card issuer; the bank must stop future payments. This stops the money, not the contract, so it is a backstop for merchants that make cancelling hard, not a first resort.\n"
+      },
+      "txn_ids": [
+        "t00015",
+        "t00084",
+        "t00159",
+        "t00231",
+        "t00306",
+        "t00379"
+      ],
+      "descriptions": [
+        "PRET A MANGER CLUB"
+      ]
+    },
+    {
+      "id": "J Smith|direct|0",
+      "merchant": "J Smith",
+      "label": "J Smith",
+      "product": null,
+      "channel": "direct",
+      "kind": "other",
+      "category": null,
+      "known_merchant": false,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.77,
+      "n": 13,
+      "first": "2025-10-01",
+      "last": "2026-10-01",
+      "latest_amount": 1650.0,
+      "annual_cost": 19800.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00003",
+        "t00075",
+        "t00144",
+        "t00212",
+        "t00297",
+        "t00368",
+        "t00439",
+        "t00513",
+        "t00596",
+        "t00676",
+        "t00759",
+        "t00832",
+        "t00918"
+      ],
+      "descriptions": [
+        "J SMITH RENT"
+      ]
+    },
+    {
+      "id": "Transfer To Savings|direct|0",
+      "merchant": "Transfer To Savings",
+      "label": "Transfer To Savings",
+      "product": null,
+      "channel": "direct",
+      "kind": "other",
+      "category": null,
+      "known_merchant": false,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.77,
+      "n": 12,
+      "first": "2025-10-27",
+      "last": "2026-09-28",
+      "latest_amount": 300.0,
+      "annual_cost": 3600.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00060",
+        "t00128",
+        "t00203",
+        "t00284",
+        "t00360",
+        "t00427",
+        "t00506",
+        "t00581",
+        "t00667",
+        "t00745",
+        "t00822",
+        "t00910"
+      ],
+      "descriptions": [
+        "TRANSFER TO SAVINGS 20-11-44 44710465",
+        "TRANSFER TO SAVINGS 20-11-44 44710733",
+        "TRANSFER TO SAVINGS 20-11-44 44710923",
+        "TRANSFER TO SAVINGS 20-11-44 44712940"
+      ]
+    },
+    {
+      "id": "Council Tax|direct|0",
+      "merchant": "Council Tax",
+      "label": "Council Tax",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "council_tax",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 11,
+      "first": "2025-10-15",
+      "last": "2026-10-15",
+      "latest_amount": 160.1,
+      "annual_cost": 1921.2,
+      "flags": {
+        "price_rise": {
+          "old": 152.4,
+          "new": 160.1,
+          "from": "2026-04-15",
+          "pct": 5.1,
+          "annual_increase": 92.4
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00034",
+        "t00108",
+        "t00180",
+        "t00260",
+        "t00476",
+        "t00556",
+        "t00637",
+        "t00718",
+        "t00801",
+        "t00881",
+        "t00954"
+      ],
+      "descriptions": [
+        "LB ISLINGTON CTAX"
+      ]
+    },
+    {
+      "id": "Octopus Energy|direct|0",
+      "merchant": "Octopus Energy",
+      "label": "Octopus Energy",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "energy",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-03",
+      "last": "2026-10-05",
+      "latest_amount": 98.76,
+      "annual_cost": 1185.12,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00009",
+        "t00076",
+        "t00150",
+        "t00224",
+        "t00301",
+        "t00373",
+        "t00447",
+        "t00528",
+        "t00606",
+        "t00686",
+        "t00760",
+        "t00843",
+        "t00931"
+      ],
+      "descriptions": [
+        "OCTOPUS ENERGY"
+      ]
+    },
+    {
+      "id": "Virgin Media|direct|0",
+      "merchant": "Virgin Media",
+      "label": "Virgin Media",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "broadband",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-13",
+      "last": "2026-10-12",
+      "latest_amount": 40.5,
+      "annual_cost": 486.0,
+      "flags": {
+        "price_rise": {
+          "old": 38.0,
+          "new": 40.5,
+          "from": "2026-04-13",
+          "pct": 6.6,
+          "annual_increase": 30.0
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00031",
+        "t00100",
+        "t00173",
+        "t00249",
+        "t00326",
+        "t00398",
+        "t00473",
+        "t00550",
+        "t00630",
+        "t00713",
+        "t00790",
+        "t00878",
+        "t00950"
+      ],
+      "descriptions": [
+        "VIRGIN MEDIA PYMTS"
+      ]
+    },
+    {
+      "id": "Thames Water|direct|0",
+      "merchant": "Thames Water",
+      "label": "Thames Water",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "water",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-20",
+      "last": "2026-10-20",
+      "latest_amount": 38.0,
+      "annual_cost": 456.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00045",
+        "t00115",
+        "t00194",
+        "t00271",
+        "t00345",
+        "t00414",
+        "t00487",
+        "t00566",
+        "t00660",
+        "t00731",
+        "t00811",
+        "t00894",
+        "t00967"
+      ],
+      "descriptions": [
+        "THAMES WATER"
+      ]
+    },
+    {
+      "id": "EE|direct|0",
+      "merchant": "EE",
+      "label": "EE",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "mobile",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-08",
+      "last": "2026-10-08",
+      "latest_amount": 23.2,
+      "annual_cost": 278.4,
+      "flags": {
+        "price_rise": {
+          "old": 22.0,
+          "new": 23.2,
+          "from": "2026-04-08",
+          "pct": 5.5,
+          "annual_increase": 14.4
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00019",
+        "t00092",
+        "t00161",
+        "t00237",
+        "t00316",
+        "t00386",
+        "t00459",
+        "t00537",
+        "t00618",
+        "t00697",
+        "t00780",
+        "t00857",
+        "t00935"
+      ],
+      "descriptions": [
+        "EE LIMITED"
+      ]
+    },
+    {
+      "id": "TV Licence|direct|0",
+      "merchant": "TV Licence",
+      "label": "TV Licence",
+      "product": null,
+      "channel": "direct",
+      "kind": "bill",
+      "category": "tv_licence",
+      "known_merchant": true,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.99,
+      "n": 13,
+      "first": "2025-10-01",
+      "last": "2026-10-01",
+      "latest_amount": 14.95,
+      "annual_cost": 179.4,
+      "flags": {
+        "price_rise": {
+          "old": 14.54,
+          "new": 14.95,
+          "from": "2026-04-01",
+          "pct": 2.8,
+          "annual_increase": 4.92
+        }
+      },
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00005",
+        "t00079",
+        "t00147",
+        "t00215",
+        "t00299",
+        "t00372",
+        "t00442",
+        "t00516",
+        "t00600",
+        "t00679",
+        "t00762",
+        "t00836",
+        "t00922"
+      ],
+      "descriptions": [
+        "TV LICENCE MBP"
+      ]
+    },
+    {
+      "id": "Oxfam|direct|0",
+      "merchant": "Oxfam",
+      "label": "Oxfam",
+      "product": null,
+      "channel": "direct",
+      "kind": "other",
+      "category": null,
+      "known_merchant": false,
+      "cadence": "monthly",
+      "cadence_inferred": false,
+      "regularity": 1.0,
+      "active": true,
+      "confidence": 0.77,
+      "n": 13,
+      "first": "2025-10-06",
+      "last": "2026-10-05",
+      "latest_amount": 10.0,
+      "annual_cost": 120.0,
+      "flags": {},
+      "forgotten_score": 0,
+      "cancel": null,
+      "txn_ids": [
+        "t00014",
+        "t00083",
+        "t00156",
+        "t00226",
+        "t00305",
+        "t00378",
+        "t00455",
+        "t00531",
+        "t00613",
+        "t00694",
+        "t00765",
+        "t00854",
+        "t00932"
+      ],
+      "descriptions": [
+        "OXFAM"
+      ]
+    }
+  ],
+  "summary": {
+    "actions": [
+      {
+        "stream": "HelloFresh|direct|0",
+        "label": "HelloFresh",
+        "action": "confirm_keep",
+        "annual": 2339.48,
+        "expected": 0.0,
+        "method": "online",
+        "automatable": "yes",
+        "why": "started 2026-06-06 after a trial/intro offer"
+      },
+      {
+        "stream": "Apple|apple|1",
+        "label": "Apple (Apple Music)",
+        "action": "cancel",
+        "annual": 131.88,
+        "expected": 118.69,
+        "method": "online_2fa",
+        "automatable": "with_handoff",
+        "why": "duplicate: two music services; started as a free trial / intro offer; billed via apple, easy to miss on a statement"
+      },
+      {
+        "stream": "NOW|direct|0",
+        "label": "NOW",
+        "action": "confirm_keep",
+        "annual": 119.88,
+        "expected": 0.0,
+        "method": "online",
+        "automatable": "yes",
+        "why": "started 2026-02-17 after a trial/intro offer"
+      },
+      {
+        "stream": "Audible|direct|0",
+        "label": "Audible",
+        "action": "confirm_keep",
+        "annual": 95.88,
+        "expected": 0.0,
+        "method": "online",
+        "automatable": "with_handoff",
+        "why": "started 2026-05-03 after a trial/intro offer"
+      },
+      {
+        "stream": "Netflix|paypal|0",
+        "label": "Netflix",
+        "action": "cancel",
+        "annual": 71.88,
+        "expected": 68.29,
+        "method": "online",
+        "automatable": "yes",
+        "why": "duplicate: Netflix is being paid for twice; billed via paypal, easy to miss on a statement"
+      },
+      {
+        "stream": "Deliveroo Plus|direct|0",
+        "label": "Deliveroo Plus",
+        "action": "cancel",
+        "annual": 41.88,
+        "expected": 35.6,
+        "method": "in_app",
+        "automatable": "yes",
+        "why": "no Deliveroo spend since 2026-04-26"
+      },
+      {
+        "stream": "Google One|google_play|0",
+        "label": "Google One",
+        "action": "cancel",
+        "annual": 19.08,
+        "expected": 17.17,
+        "method": "online_2fa",
+        "automatable": "with_handoff",
+        "why": "duplicate: two cloud storage services; billed via google_play, easy to miss on a statement"
+      }
+    ],
+    "price_rises": [
+      {
+        "stream": "Netflix|direct|0",
+        "label": "Netflix",
+        "kind": "subscription",
+        "old": 12.99,
+        "new": 14.99,
+        "pct": 15.4,
+        "annual_increase": 24.0,
+        "since": "2026-06-07"
+      },
+      {
+        "stream": "Spotify|direct|0",
+        "label": "Spotify",
+        "kind": "subscription",
+        "old": 11.99,
+        "new": 12.99,
+        "pct": 8.3,
+        "annual_increase": 12.0,
+        "since": "2026-04-22"
+      },
+      {
+        "stream": "Disney+|direct|0",
+        "label": "Disney+",
+        "kind": "subscription",
+        "old": 4.99,
+        "new": 5.99,
+        "pct": 20.0,
+        "annual_increase": 12.0,
+        "since": "2026-09-11"
+      },
+      {
+        "stream": "Council Tax|direct|0",
+        "label": "Council Tax",
+        "kind": "bill",
+        "old": 152.4,
+        "new": 160.1,
+        "pct": 5.1,
+        "annual_increase": 92.4,
+        "since": "2026-04-15"
+      },
+      {
+        "stream": "Virgin Media|direct|0",
+        "label": "Virgin Media",
+        "kind": "bill",
+        "old": 38.0,
+        "new": 40.5,
+        "pct": 6.6,
+        "annual_increase": 30.0,
+        "since": "2026-04-13"
+      },
+      {
+        "stream": "EE|direct|0",
+        "label": "EE",
+        "kind": "bill",
+        "old": 22.0,
+        "new": 23.2,
+        "pct": 5.5,
+        "annual_increase": 14.4,
+        "since": "2026-04-08"
+      },
+      {
+        "stream": "TV Licence|direct|0",
+        "label": "TV Licence",
+        "kind": "bill",
+        "old": 14.54,
+        "new": 14.95,
+        "pct": 2.8,
+        "annual_increase": 4.92,
+        "since": "2026-04-01"
+      }
+    ],
+    "active_subscriptions": 20,
+    "annual_subscription_spend": 4936.59,
+    "back_in_pocket_identified": 264.72,
+    "back_in_pocket_expected": 239.75,
+    "price_rise_exposure": 189.72,
+    "assumptions": {
+      "success_rate_by_route": {
+        "online": 0.95,
+        "online_2fa": 0.9,
+        "app_store": 0.9,
+        "in_app": 0.85,
+        "email": 0.8,
+        "chat": 0.8,
+        "phone": 0.7,
+        "None": 0.6
+      },
+      "horizon": "next 12 months at latest price"
+    }
+  }
+}

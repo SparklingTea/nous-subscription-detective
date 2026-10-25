@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+# Real bank statements never leave the machine
+data/raw/
+data/mine/
+.claude/

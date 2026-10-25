@@ -1,0 +1,31 @@
+stream_id,merchant,kind,cadence,active,price_rise,duplicate,trial_converted,forgotten,note
+rent,J Smith,other,monthly,True,False,False,False,False,Rent standing order
+savings,Savings transfer,other,monthly,True,False,False,False,False,
+oxfam,Oxfam,other,monthly,True,False,False,False,False,Charity direct debit: recurring but not a subscription
+ctax,Council Tax,bill,monthly,True,True,False,False,False,10 instalments: Feb/Mar gap
+energy,Octopus Energy,bill,monthly,True,False,False,False,False,Seasonal variable direct debit
+broadband,Virgin Media,bill,monthly,True,True,False,False,False,April mid-contract rise
+mobile,EE,bill,monthly,True,True,False,False,False,
+tvl,TV Licence,bill,monthly,True,True,False,False,False,
+water,Thames Water,bill,monthly,True,False,False,False,False,
+netflix,Netflix,subscription,monthly,True,True,True,False,False,
+netflix_pp,Netflix,subscription,monthly,True,False,True,False,True,Old ad-tier account still billing via PayPal
+spotify,Spotify,subscription,monthly,True,True,True,False,False,
+apple_music,Apple,subscription,monthly,True,False,True,True,True,Apple Music: 1-month trial left running next to Spotify
+icloud,Apple,subscription,monthly,True,False,True,False,False,iCloud+ 200GB
+google_one,Google One,subscription,monthly,True,False,True,False,True,Second cloud storage plan alongside iCloud+
+prime,Amazon Prime,subscription,annual,True,False,False,False,False,Single annual charge in window
+audible,Audible,subscription,monthly,True,False,False,True,False,Trial converted; actively used
+now,NOW,subscription,monthly,True,False,False,True,True,"7-day trial for one series, never cancelled"
+disney,Disney+,subscription,monthly,True,True,False,False,False,"Started mid-window, no trial"
+puregym,PureGym,subscription,monthly,True,False,False,False,False,
+m365,Microsoft 365,subscription,annual,True,False,False,False,False,
+adobe,Adobe,subscription,monthly,True,False,False,False,False,Annual plan paid monthly: exit fee applies
+chatgpt,ChatGPT,subscription,monthly,True,False,False,False,False,USD-billed: amount moves with FX + non-sterling fee
+deliveroo_plus,Deliveroo Plus,subscription,monthly,True,False,False,False,True,No Deliveroo orders since May
+club_pret,Club Pret,subscription,monthly,False,False,False,False,False,Cancelled in March
+hellofresh,HelloFresh,subscription,weekly,True,False,False,True,False,"Intro discount boxes, then full price; two skipped weeks"
+patreon,Patreon,subscription,monthly,True,False,False,False,False,
+substack,Substack,subscription,monthly,True,False,False,False,False,
+ironworks,Ironworks Climbing,subscription,monthly,True,False,False,False,False,Long-tail: not in merchant catalogue
+coffee,Coffee Collective,subscription,monthly,True,False,False,False,False,Long-tail bean subscription via Square

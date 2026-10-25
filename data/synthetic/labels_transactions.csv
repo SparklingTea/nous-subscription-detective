@@ -1,0 +1,968 @@
+id,merchant,stream_id
+t00001,Gail's,
+t00002,Ironworks Climbing,ironworks
+t00003,J Smith,rent
+t00004,PureGym,puregym
+t00005,TV Licence,tvl
+t00006,Gail's,
+t00007,Patreon,patreon
+t00008,Gail's,
+t00009,Octopus Energy,energy
+t00010,ChatGPT,chatgpt
+t00011,Fade Brothers Barbers,
+t00012,Tesco,
+t00013,Sainsbury's,
+t00014,Oxfam,oxfam
+t00015,Club Pret,club_pret
+t00016,TfL,
+t00017,Amazon,
+t00018,Gail's,
+t00019,EE,mobile
+t00020,Netflix,netflix
+t00021,Uber,
+t00022,Gail's,
+t00023,TfL,
+t00024,Deliveroo,
+t00025,Gail's,
+t00026,Google One,google_one
+t00027,Pret A Manger,
+t00028,Tesco,
+t00029,TfL,
+t00030,Deliveroo Plus,deliveroo_plus
+t00031,Virgin Media,broadband
+t00032,Gail's,
+t00033,Apple,icloud
+t00034,Council Tax,ctax
+t00035,TfL,
+t00036,Amazon,
+t00037,Gail's,
+t00038,Uber,
+t00039,Tesco,
+t00040,TfL,
+t00041,Deliveroo,
+t00042,Netflix,netflix_pp
+t00043,TfL,
+t00044,TfL,
+t00045,Thames Water,water
+t00046,Gail's,
+t00047,Sainsbury's,
+t00048,TfL,
+t00049,Dishoom,
+t00050,Spotify,spotify
+t00051,Uber,
+t00052,Acme Analytics,
+t00053,Gail's,
+t00054,TfL,
+t00055,Dishoom,
+t00056,Adobe,adobe
+t00057,Deliveroo,
+t00058,Gail's,
+t00059,TfL,
+t00060,Savings transfer,savings
+t00061,Deliveroo,
+t00062,Pret A Manger,
+t00063,TfL,
+t00064,Uber,
+t00065,Pret A Manger,
+t00066,Fade Brothers Barbers,
+t00067,TfL,
+t00068,Patreon,patreon
+t00069,Tesco,
+t00070,TfL,
+t00071,Dishoom,
+t00072,TfL,
+t00073,Gail's,
+t00074,Ironworks Climbing,ironworks
+t00075,J Smith,rent
+t00076,Octopus Energy,energy
+t00077,Pret A Manger,
+t00078,PureGym,puregym
+t00079,TV Licence,tvl
+t00080,Gail's,
+t00081,ChatGPT,chatgpt
+t00082,TfL,
+t00083,Oxfam,oxfam
+t00084,Club Pret,club_pret
+t00085,Sainsbury's,
+t00086,TfL,
+t00087,TfL,
+t00088,Netflix,netflix
+t00089,Tesco,
+t00090,TfL,
+t00091,Deliveroo,
+t00092,EE,mobile
+t00093,Gail's,
+t00094,Google One,google_one
+t00095,Amazon,
+t00096,Gail's,
+t00097,TfL,
+t00098,Pret A Manger,
+t00099,Uber,
+t00100,Virgin Media,broadband
+t00101,Deliveroo Plus,deliveroo_plus
+t00102,Gail's,
+t00103,TfL,
+t00104,Apple,icloud
+t00105,TfL,
+t00106,Tesco,
+t00107,Gail's,
+t00108,Council Tax,ctax
+t00109,TfL,
+t00110,TfL,
+t00111,Gail's,
+t00112,Netflix,netflix_pp
+t00113,Gail's,
+t00114,Microsoft 365,m365
+t00115,Thames Water,water
+t00116,TfL,
+t00117,Flat White,
+t00118,Spotify,spotify
+t00119,Tesco,
+t00120,TfL,
+t00121,Amazon,
+t00122,Deliveroo,
+t00123,Gail's,
+t00124,Acme Analytics,
+t00125,Gail's,
+t00126,Uber,
+t00127,Gail's,
+t00128,Savings transfer,savings
+t00129,Deliveroo,
+t00130,Flat White,
+t00131,Gail's,
+t00132,Adobe,adobe
+t00133,Amazon,
+t00134,Gail's,
+t00135,Sainsbury's,
+t00136,TfL,
+t00137,Pret A Manger,
+t00138,Tesco,
+t00139,TfL,
+t00140,Deliveroo,
+t00141,TfL,
+t00142,Gail's,
+t00143,Ironworks Climbing,ironworks
+t00144,J Smith,rent
+t00145,PureGym,puregym
+t00146,TfL,
+t00147,TV Licence,tvl
+t00148,Patreon,patreon
+t00149,Gail's,
+t00150,Octopus Energy,energy
+t00151,Fade Brothers Barbers,
+t00152,TfL,
+t00153,Amazon,
+t00154,Gail's,
+t00155,ChatGPT,chatgpt
+t00156,Oxfam,oxfam
+t00157,Sainsbury's,
+t00158,Dishoom,
+t00159,Club Pret,club_pret
+t00160,Tesco,
+t00161,EE,mobile
+t00162,Gail's,
+t00163,Netflix,netflix
+t00164,Pret A Manger,
+t00165,Sainsbury's,
+t00166,TfL,
+t00167,Gail's,
+t00168,Google One,google_one
+t00169,Gail's,
+t00170,TfL,
+t00171,Disney+,disney
+t00172,TfL,
+t00173,Virgin Media,broadband
+t00174,Deliveroo Plus,deliveroo_plus
+t00175,Sainsbury's,
+t00176,Tesco,
+t00177,Apple,icloud
+t00178,TfL,
+t00179,Amazon,
+t00180,Council Tax,ctax
+t00181,Pret A Manger,
+t00182,Gail's,
+t00183,Flat White,
+t00184,TfL,
+t00185,TfL,
+t00186,Netflix,netflix_pp
+t00187,Pret A Manger,
+t00188,Amazon,
+t00189,Tesco,
+t00190,TfL,
+t00191,Sainsbury's,
+t00192,Gail's,
+t00193,Sainsbury's,
+t00194,Thames Water,water
+t00195,Spotify,spotify
+t00196,Amazon,
+t00197,Gail's,
+t00198,Sainsbury's,
+t00199,Acme Analytics,
+t00200,Gail's,
+t00201,TfL,
+t00202,Gail's,
+t00203,Savings transfer,savings
+t00204,Tesco,
+t00205,Adobe,adobe
+t00206,TfL,
+t00207,TfL,
+t00208,Gail's,
+t00209,TfL,
+t00210,Uber,
+t00211,Ironworks Climbing,ironworks
+t00212,J Smith,rent
+t00213,Patreon,patreon
+t00214,PureGym,puregym
+t00215,TV Licence,tvl
+t00216,Gail's,
+t00217,TfL,
+t00218,Tesco,
+t00219,TfL,
+t00220,Apple,apple_music
+t00221,Flat White,
+t00222,TfL,
+t00223,Gail's,
+t00224,Octopus Energy,energy
+t00225,ChatGPT,chatgpt
+t00226,Oxfam,oxfam
+t00227,Pret A Manger,
+t00228,Fade Brothers Barbers,
+t00229,TfL,
+t00230,Flat White,
+t00231,Club Pret,club_pret
+t00232,TfL,
+t00233,Uber,
+t00234,Gail's,
+t00235,Netflix,netflix
+t00236,Pret A Manger,
+t00237,EE,mobile
+t00238,Gail's,
+t00239,Sainsbury's,
+t00240,TfL,
+t00241,Gail's,
+t00242,Google One,google_one
+t00243,IKEA,
+t00244,Tesco,
+t00245,Pret A Manger,
+t00246,TfL,
+t00247,Disney+,disney
+t00248,TfL,
+t00249,Virgin Media,broadband
+t00250,Deliveroo Plus,deliveroo_plus
+t00251,Gail's,
+t00252,TfL,
+t00253,Amazon,
+t00254,Deliveroo,
+t00255,Gail's,
+t00256,TfL,
+t00257,Apple,icloud
+t00258,Flat White,
+t00259,Gail's,
+t00260,Council Tax,ctax
+t00261,Gail's,
+t00262,Tesco,
+t00263,TfL,
+t00264,Netflix,netflix_pp
+t00265,TfL,
+t00266,Flat White,
+t00267,Gail's,
+t00268,Pret A Manger,
+t00269,TfL,
+t00270,Gail's,
+t00271,Thames Water,water
+t00272,Deliveroo,
+t00273,Gail's,
+t00274,Gail's,
+t00275,Pret A Manger,
+t00276,TfL,
+t00277,Acme Analytics,
+t00278,Sainsbury's,
+t00279,Spotify,spotify
+t00280,TfL,
+t00281,Tesco,
+t00282,Deliveroo,
+t00283,TfL,
+t00284,Savings transfer,savings
+t00285,Adobe,adobe
+t00286,Gail's,
+t00287,TfL,
+t00288,TfL,
+t00289,Gail's,
+t00290,Sainsbury's,
+t00291,TfL,
+t00292,TfL,
+t00293,Deliveroo,
+t00294,Patreon,patreon
+t00295,Pret A Manger,
+t00296,Ironworks Climbing,ironworks
+t00297,J Smith,rent
+t00298,PureGym,puregym
+t00299,TV Licence,tvl
+t00300,Apple,apple_music
+t00301,Octopus Energy,energy
+t00302,Gail's,
+t00303,ChatGPT,chatgpt
+t00304,TfL,
+t00305,Oxfam,oxfam
+t00306,Club Pret,club_pret
+t00307,Fade Brothers Barbers,
+t00308,Deliveroo,
+t00309,TfL,
+t00310,Flat White,
+t00311,Tesco,
+t00312,TfL,
+t00313,Netflix,netflix
+t00314,Pret A Manger,
+t00315,TfL,
+t00316,EE,mobile
+t00317,Gail's,
+t00318,Gail's,
+t00319,Google One,google_one
+t00320,Amazon,
+t00321,Disney+,disney
+t00322,Gail's,
+t00323,Deliveroo Plus,deliveroo_plus
+t00324,Gail's,
+t00325,TfL,
+t00326,Virgin Media,broadband
+t00327,Dishoom,
+t00328,Gail's,
+t00329,Pret A Manger,
+t00330,TfL,
+t00331,Apple,icloud
+t00332,Tesco,
+t00333,TfL,
+t00334,TfL,
+t00335,Gail's,
+t00336,TfL,
+t00337,Dishoom,
+t00338,NOW,now
+t00339,TfL,
+t00340,Netflix,netflix_pp
+t00341,Uber,
+t00342,TfL,
+t00343,Gail's,
+t00344,Pret A Manger,
+t00345,Thames Water,water
+t00346,Dishoom,
+t00347,Flat White,
+t00348,TfL,
+t00349,Spotify,spotify
+t00350,Deliveroo,
+t00351,Gail's,
+t00352,Pret A Manger,
+t00353,Uber,
+t00354,Acme Analytics,
+t00355,Deliveroo,
+t00356,Gail's,
+t00357,Pret A Manger,
+t00358,TfL,
+t00359,Gail's,
+t00360,Savings transfer,savings
+t00361,Adobe,adobe
+t00362,Gail's,
+t00363,Pret A Manger,
+t00364,Tesco,
+t00365,Sainsbury's,
+t00366,Deliveroo,
+t00367,Ironworks Climbing,ironworks
+t00368,J Smith,rent
+t00369,Patreon,patreon
+t00370,PureGym,puregym
+t00371,TfL,
+t00372,TV Licence,tvl
+t00373,Octopus Energy,energy
+t00374,Apple,apple_music
+t00375,ChatGPT,chatgpt
+t00376,Fade Brothers Barbers,
+t00377,TfL,
+t00378,Oxfam,oxfam
+t00379,Club Pret,club_pret
+t00380,Uber,
+t00381,TfL,
+t00382,Tesco,
+t00383,Netflix,netflix
+t00384,TfL,
+t00385,Uber,
+t00386,EE,mobile
+t00387,Google One,google_one
+t00388,TfL,
+t00389,Gail's,
+t00390,Amazon Prime,prime
+t00391,Disney+,disney
+t00392,Gail's,
+t00393,Substack,substack
+t00394,TfL,
+t00395,Amazon,
+t00396,Gail's,
+t00397,TfL,
+t00398,Virgin Media,broadband
+t00399,Deliveroo Plus,deliveroo_plus
+t00400,Amazon,
+t00401,Apple,icloud
+t00402,Tesco,
+t00403,TfL,
+t00404,TfL,
+t00405,Gail's,
+t00406,NOW,now
+t00407,Pret A Manger,
+t00408,TfL,
+t00409,Gail's,
+t00410,Netflix,netflix_pp
+t00411,TfL,
+t00412,Gail's,
+t00413,TfL,
+t00414,Thames Water,water
+t00415,Tesco,
+t00416,Pret A Manger,
+t00417,Spotify,spotify
+t00418,TfL,
+t00419,Deliveroo,
+t00420,Gail's,
+t00421,Sainsbury's,
+t00422,Gail's,
+t00423,TfL,
+t00424,Acme Analytics,
+t00425,Gail's,
+t00426,TfL,
+t00427,Savings transfer,savings
+t00428,Sainsbury's,
+t00429,Adobe,adobe
+t00430,Deliveroo,
+t00431,Tesco,
+t00432,Deliveroo,
+t00433,Gail's,
+t00434,Sainsbury's,
+t00435,Fade Brothers Barbers,
+t00436,Gail's,
+t00437,Gail's,
+t00438,Ironworks Climbing,ironworks
+t00439,J Smith,rent
+t00440,PureGym,puregym
+t00441,TfL,
+t00442,TV Licence,tvl
+t00443,Amazon,
+t00444,Patreon,patreon
+t00445,Pret A Manger,
+t00446,TfL,
+t00447,Octopus Energy,energy
+t00448,TfL,
+t00449,Apple,apple_music
+t00450,Deliveroo,
+t00451,ChatGPT,chatgpt
+t00452,Pret A Manger,
+t00453,Tesco,
+t00454,Gail's,
+t00455,Oxfam,oxfam
+t00456,Gail's,
+t00457,Netflix,netflix
+t00458,TfL,
+t00459,EE,mobile
+t00460,Pret A Manger,
+t00461,Gail's,
+t00462,Google One,google_one
+t00463,Pret A Manger,
+t00464,TfL,
+t00465,Pret A Manger,
+t00466,TfL,
+t00467,Substack,substack
+t00468,TfL,
+t00469,Disney+,disney
+t00470,Deliveroo Plus,deliveroo_plus
+t00471,Gail's,
+t00472,TfL,
+t00473,Virgin Media,broadband
+t00474,Apple,icloud
+t00475,Gail's,
+t00476,Council Tax,ctax
+t00477,Gail's,
+t00478,Coffee Collective,coffee
+t00479,NOW,now
+t00480,TfL,
+t00481,Pret A Manger,
+t00482,Tesco,
+t00483,TfL,
+t00484,Amazon,
+t00485,Netflix,netflix_pp
+t00486,TfL,
+t00487,Thames Water,water
+t00488,Deliveroo,
+t00489,Gail's,
+t00490,TfL,
+t00491,Gail's,
+t00492,Spotify,spotify
+t00493,Gail's,
+t00494,TfL,
+t00495,Acme Analytics,
+t00496,Gail's,
+t00497,Amazon,
+t00498,Tesco,
+t00499,TfL,
+t00500,Deliveroo,
+t00501,TfL,
+t00502,Adobe,adobe
+t00503,Flat White,
+t00504,Fade Brothers Barbers,
+t00505,TfL,
+t00506,Savings transfer,savings
+t00507,Gail's,
+t00508,Pret A Manger,
+t00509,TfL,
+t00510,Flat White,
+t00511,Pret A Manger,
+t00512,Ironworks Climbing,ironworks
+t00513,J Smith,rent
+t00514,Pret A Manger,
+t00515,PureGym,puregym
+t00516,TV Licence,tvl
+t00517,Amazon,
+t00518,Patreon,patreon
+t00519,Pret A Manger,
+t00520,Sainsbury's,
+t00521,Tesco,
+t00522,TfL,
+t00523,Uber,
+t00524,Apple,apple_music
+t00525,Audible,audible
+t00526,TfL,
+t00527,Gail's,
+t00528,Octopus Energy,energy
+t00529,ChatGPT,chatgpt
+t00530,Sainsbury's,
+t00531,Oxfam,oxfam
+t00532,TfL,
+t00533,Gail's,
+t00534,TfL,
+t00535,Gail's,
+t00536,Netflix,netflix
+t00537,EE,mobile
+t00538,Gail's,
+t00539,Google One,google_one
+t00540,Tesco,
+t00541,TfL,
+t00542,TfL,
+t00543,Disney+,disney
+t00544,Pret A Manger,
+t00545,Substack,substack
+t00546,TfL,
+t00547,Amazon,
+t00548,Deliveroo Plus,deliveroo_plus
+t00549,Gail's,
+t00550,Virgin Media,broadband
+t00551,Apple,icloud
+t00552,Gail's,
+t00553,Pret A Manger,
+t00554,TfL,
+t00555,Gail's,
+t00556,Council Tax,ctax
+t00557,Coffee Collective,coffee
+t00558,TfL,
+t00559,Tesco,
+t00560,Amazon,
+t00561,NOW,now
+t00562,Gail's,
+t00563,TfL,
+t00564,Gail's,
+t00565,Netflix,netflix_pp
+t00566,Thames Water,water
+t00567,Gail's,
+t00568,Gail's,
+t00569,Spotify,spotify
+t00570,Tesco,
+t00571,Uber,
+t00572,Acme Analytics,
+t00573,Gail's,
+t00574,Pret A Manger,
+t00575,TfL,
+t00576,Amazon,
+t00577,Flat White,
+t00578,Pret A Manger,
+t00579,Sainsbury's,
+t00580,TfL,
+t00581,Savings transfer,savings
+t00582,Flat White,
+t00583,Adobe,adobe
+t00584,Flat White,
+t00585,Gail's,
+t00586,Gail's,
+t00587,Uber,
+t00588,Sainsbury's,
+t00589,Tesco,
+t00590,TfL,
+t00591,Pret A Manger,
+t00592,Sainsbury's,
+t00593,TfL,
+t00594,Gail's,
+t00595,Ironworks Climbing,ironworks
+t00596,J Smith,rent
+t00597,PureGym,puregym
+t00598,Fade Brothers Barbers,
+t00599,TfL,
+t00600,TV Licence,tvl
+t00601,Amazon,
+t00602,Audible,audible
+t00603,Gail's,
+t00604,Patreon,patreon
+t00605,Apple,apple_music
+t00606,Octopus Energy,energy
+t00607,Sainsbury's,
+t00608,TfL,
+t00609,Gail's,
+t00610,ChatGPT,chatgpt
+t00611,Pret A Manger,
+t00612,Gail's,
+t00613,Oxfam,oxfam
+t00614,HelloFresh,hellofresh
+t00615,Tesco,
+t00616,TfL,
+t00617,Netflix,netflix
+t00618,EE,mobile
+t00619,Gail's,
+t00620,TfL,
+t00621,Google One,google_one
+t00622,TfL,
+t00623,Gail's,
+t00624,Sainsbury's,
+t00625,Substack,substack
+t00626,Gail's,
+t00627,TfL,
+t00628,Disney+,disney
+t00629,Gail's,
+t00630,Virgin Media,broadband
+t00631,Deliveroo Plus,deliveroo_plus
+t00632,HelloFresh,hellofresh
+t00633,Sainsbury's,
+t00634,Tesco,
+t00635,TfL,
+t00636,Apple,icloud
+t00637,Council Tax,ctax
+t00638,Pret A Manger,
+t00639,TfL,
+t00640,Gail's,
+t00641,Coffee Collective,coffee
+t00642,TfL,
+t00643,Gail's,
+t00644,NOW,now
+t00645,TfL,
+t00646,Gail's,
+t00647,Flat White,
+t00648,Gail's,
+t00649,Netflix,netflix_pp
+t00650,Pret A Manger,
+t00651,TfL,
+t00652,HelloFresh,hellofresh
+t00653,Tesco,
+t00654,TfL,
+t00655,Pret A Manger,
+t00656,Amazon,
+t00657,Gail's,
+t00658,Spotify,spotify
+t00659,TfL,
+t00660,Thames Water,water
+t00661,Gail's,
+t00662,TfL,
+t00663,Gail's,
+t00664,TfL,
+t00665,Acme Analytics,
+t00666,Gail's,
+t00667,Savings transfer,savings
+t00668,HelloFresh,hellofresh
+t00669,Adobe,adobe
+t00670,Uber,
+t00671,Gail's,
+t00672,Sainsbury's,
+t00673,Fade Brothers Barbers,
+t00674,Uber,
+t00675,Ironworks Climbing,ironworks
+t00676,J Smith,rent
+t00677,PureGym,puregym
+t00678,TfL,
+t00679,TV Licence,tvl
+t00680,Amazon,
+t00681,Gail's,
+t00682,Patreon,patreon
+t00683,Sainsbury's,
+t00684,Audible,audible
+t00685,Gail's,
+t00686,Octopus Energy,energy
+t00687,TfL,
+t00688,Apple,apple_music
+t00689,HelloFresh,hellofresh
+t00690,ChatGPT,chatgpt
+t00691,Tesco,
+t00692,TfL,
+t00693,Gail's,
+t00694,Oxfam,oxfam
+t00695,Gail's,
+t00696,TfL,
+t00697,EE,mobile
+t00698,Netflix,netflix
+t00699,Amazon,
+t00700,Gail's,
+t00701,Google One,google_one
+t00702,TfL,
+t00703,Amazon,
+t00704,Gail's,
+t00705,TfL,
+t00706,Disney+,disney
+t00707,HelloFresh,hellofresh
+t00708,Substack,substack
+t00709,Tesco,
+t00710,Deliveroo Plus,deliveroo_plus
+t00711,TfL,
+t00712,TfL,
+t00713,Virgin Media,broadband
+t00714,TfL,
+t00715,Amazon,
+t00716,Apple,icloud
+t00717,Gail's,
+t00718,Council Tax,ctax
+t00719,Uber,
+t00720,Gail's,
+t00721,NOW,now
+t00722,Coffee Collective,coffee
+t00723,Uber,
+t00724,Amazon,
+t00725,TfL,
+t00726,HelloFresh,hellofresh
+t00727,Netflix,netflix_pp
+t00728,Gail's,
+t00729,Sainsbury's,
+t00730,TfL,
+t00731,Thames Water,water
+t00732,Pret A Manger,
+t00733,TfL,
+t00734,Spotify,spotify
+t00735,Gail's,
+t00736,Acme Analytics,
+t00737,Gail's,
+t00738,Sainsbury's,
+t00739,TfL,
+t00740,Tesco,
+t00741,Pret A Manger,
+t00742,TfL,
+t00743,Gail's,
+t00744,Pret A Manger,
+t00745,Savings transfer,savings
+t00746,Adobe,adobe
+t00747,Sainsbury's,
+t00748,Pret A Manger,
+t00749,Gail's,
+t00750,TfL,
+t00751,TfL,
+t00752,HelloFresh,hellofresh
+t00753,TfL,
+t00754,John Lewis,
+t00755,Patreon,patreon
+t00756,Audible,audible
+t00757,Gail's,
+t00758,Ironworks Climbing,ironworks
+t00759,J Smith,rent
+t00760,Octopus Energy,energy
+t00761,PureGym,puregym
+t00762,TV Licence,tvl
+t00763,Apple,apple_music
+t00764,ChatGPT,chatgpt
+t00765,Oxfam,oxfam
+t00766,Fade Brothers Barbers,
+t00767,Uber,
+t00768,Gail's,
+t00769,TfL,
+t00770,Gail's,
+t00771,Netflix,netflix
+t00772,Pret A Manger,
+t00773,TfL,
+t00774,HelloFresh,hellofresh
+t00775,Sainsbury's,
+t00776,Tesco,
+t00777,Google One,google_one
+t00778,Sainsbury's,
+t00779,TfL,
+t00780,EE,mobile
+t00781,Gail's,
+t00782,TfL,
+t00783,Pret A Manger,
+t00784,Substack,substack
+t00785,TfL,
+t00786,Deliveroo Plus,deliveroo_plus
+t00787,Disney+,disney
+t00788,Gail's,
+t00789,Sainsbury's,
+t00790,Virgin Media,broadband
+t00791,Gail's,
+t00792,TfL,
+t00793,Apple,icloud
+t00794,Flat White,
+t00795,Gail's,
+t00796,TfL,
+t00797,HelloFresh,hellofresh
+t00798,Coffee Collective,coffee
+t00799,Tesco,
+t00800,Gail's,
+t00801,Council Tax,ctax
+t00802,NOW,now
+t00803,Uber,
+t00804,Gail's,
+t00805,Netflix,netflix_pp
+t00806,Amazon,
+t00807,Gail's,
+t00808,Sainsbury's,
+t00809,Gail's,
+t00810,Sainsbury's,
+t00811,Thames Water,water
+t00812,Dishoom,
+t00813,Gail's,
+t00814,Pret A Manger,
+t00815,TfL,
+t00816,HelloFresh,hellofresh
+t00817,Spotify,spotify
+t00818,Tesco,
+t00819,TfL,
+t00820,Acme Analytics,
+t00821,TfL,
+t00822,Savings transfer,savings
+t00823,Adobe,adobe
+t00824,TfL,
+t00825,Gail's,
+t00826,TfL,
+t00827,HelloFresh,hellofresh
+t00828,Tesco,
+t00829,TfL,
+t00830,Gail's,
+t00831,Ironworks Climbing,ironworks
+t00832,J Smith,rent
+t00833,Patreon,patreon
+t00834,PureGym,puregym
+t00835,Sainsbury's,
+t00836,TV Licence,tvl
+t00837,Pret A Manger,
+t00838,Sainsbury's,
+t00839,Fade Brothers Barbers,
+t00840,TfL,
+t00841,Audible,audible
+t00842,Gail's,
+t00843,Octopus Energy,energy
+t00844,TfL,
+t00845,Apple,apple_music
+t00846,Gail's,
+t00847,ChatGPT,chatgpt
+t00848,HelloFresh,hellofresh
+t00849,Sainsbury's,
+t00850,Tesco,
+t00851,TfL,
+t00852,TfL,
+t00853,Uber,
+t00854,Oxfam,oxfam
+t00855,Sainsbury's,
+t00856,Uber,
+t00857,EE,mobile
+t00858,Gail's,
+t00859,Netflix,netflix
+t00860,Uber,
+t00861,Gail's,
+t00862,Sainsbury's,
+t00863,TfL,
+t00864,Google One,google_one
+t00865,Substack,substack
+t00866,Disney+,disney
+t00867,Gail's,
+t00868,HelloFresh,hellofresh
+t00869,Tesco,
+t00870,TfL,
+t00871,Amazon,
+t00872,Deliveroo Plus,deliveroo_plus
+t00873,Pret A Manger,
+t00874,TfL,
+t00875,Apple,icloud
+t00876,Dishoom,
+t00877,TfL,
+t00878,Virgin Media,broadband
+t00879,Flat White,
+t00880,Gail's,
+t00881,Council Tax,ctax
+t00882,Coffee Collective,coffee
+t00883,TfL,
+t00884,Gail's,
+t00885,NOW,now
+t00886,Gail's,
+t00887,Pret A Manger,
+t00888,Netflix,netflix_pp
+t00889,Tesco,
+t00890,Flat White,
+t00891,TfL,
+t00892,Flat White,
+t00893,TfL,
+t00894,Thames Water,water
+t00895,Gail's,
+t00896,Pret A Manger,
+t00897,Spotify,spotify
+t00898,TfL,
+t00899,Amazon,
+t00900,TfL,
+t00901,Uber,
+t00902,Gail's,
+t00903,Acme Analytics,
+t00904,HelloFresh,hellofresh
+t00905,Tesco,
+t00906,TfL,
+t00907,Adobe,adobe
+t00908,Gail's,
+t00909,Sainsbury's,
+t00910,Savings transfer,savings
+t00911,Gail's,
+t00912,Fade Brothers Barbers,
+t00913,Uber,
+t00914,Gail's,
+t00915,Sainsbury's,
+t00916,TfL,
+t00917,Ironworks Climbing,ironworks
+t00918,J Smith,rent
+t00919,Patreon,patreon
+t00920,PureGym,puregym
+t00921,TfL,
+t00922,TV Licence,tvl
+t00923,Gail's,
+t00924,Apple,apple_music
+t00925,Audible,audible
+t00926,HelloFresh,hellofresh
+t00927,Tesco,
+t00928,ChatGPT,chatgpt
+t00929,Pret A Manger,
+t00930,Gail's,
+t00931,Octopus Energy,energy
+t00932,Oxfam,oxfam
+t00933,Pret A Manger,
+t00934,Gail's,
+t00935,EE,mobile
+t00936,Gail's,
+t00937,Netflix,netflix
+t00938,Gail's,
+t00939,TfL,
+t00940,Google One,google_one
+t00941,HelloFresh,hellofresh
+t00942,Substack,substack
+t00943,Tesco,
+t00944,TfL,
+t00945,Disney+,disney
+t00946,Deliveroo Plus,deliveroo_plus
+t00947,Flat White,
+t00948,Gail's,
+t00949,Pret A Manger,
+t00950,Virgin Media,broadband
+t00951,Gail's,
+t00952,Pret A Manger,
+t00953,Apple,icloud
+t00954,Council Tax,ctax
+t00955,Gail's,
+t00956,NOW,now
+t00957,Coffee Collective,coffee
+t00958,HelloFresh,hellofresh
+t00959,Tesco,
+t00960,TfL,
+t00961,Amazon,
+t00962,Gail's,
+t00963,Netflix,netflix_pp
+t00964,TfL,
+t00965,Gail's,
+t00966,Pret A Manger,
+t00967,Thames Water,water

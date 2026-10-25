@@ -1,0 +1,314 @@
+{
+  "main": {
+    "merchant": {
+      "accuracy": 0.701,
+      "n": 804,
+      "accuracy_catalogue": 0.969,
+      "accuracy_long_tail": 0.46,
+      "distinct_merchants": 32,
+      "distinct_merchants_correct": 27,
+      "errors": [
+        {
+          "label": "Bee Network",
+          "predicted": "Bee Network Bus",
+          "count": 142
+        },
+        {
+          "label": "Costa",
+          "predicted": "Costa Coffee",
+          "count": 60
+        },
+        {
+          "label": "Nationwide",
+          "predicted": "Nationwide Mortgage",
+          "count": 13
+        },
+        {
+          "label": "M Kowalski",
+          "predicted": "M Kowalski Cleaning",
+          "count": 13
+        },
+        {
+          "label": "Amazon Kindle Unlimited",
+          "predicted": "Amazon Digital",
+          "count": 12
+        }
+      ]
+    },
+    "subscription_detection": {
+      "tp": 18,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.947,
+      "recall": 1.0,
+      "f1": 0.973,
+      "false_positives": [
+        {
+          "label": "Junior Football Club",
+          "cadence": "weekly",
+          "n": 46,
+          "truth": "other"
+        }
+      ],
+      "false_negatives": []
+    },
+    "kind_confusion": [
+      {
+        "truth": "bill",
+        "predicted": "bill",
+        "count": 5
+      },
+      {
+        "truth": "other",
+        "predicted": "bnpl",
+        "count": 1
+      },
+      {
+        "truth": "other",
+        "predicted": "missed",
+        "count": 1
+      },
+      {
+        "truth": "other",
+        "predicted": "other",
+        "count": 2
+      },
+      {
+        "truth": "other",
+        "predicted": "subscription",
+        "count": 1
+      },
+      {
+        "truth": "subscription",
+        "predicted": "subscription",
+        "count": 18
+      }
+    ],
+    "cadence_accuracy": 1.0,
+    "active_accuracy": 1.0,
+    "flags": {
+      "price_rise": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positives": [],
+        "false_negatives": []
+      },
+      "duplicate": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "false_positives": [
+          "Apple",
+          "Paramount+"
+        ],
+        "false_negatives": []
+      },
+      "trial_converted": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.857,
+        "false_positives": [],
+        "false_negatives": [
+          "Apple (Calm annual after 7-day trial; single charge)"
+        ]
+      },
+      "forgotten": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "false_positives": [
+          "Apple",
+          "Google One"
+        ],
+        "false_negatives": [
+          "Dropbox (Old Dropbox Plus alongside Google One)",
+          "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+        ]
+      }
+    },
+    "summary": {
+      "actions": [
+        {
+          "stream": "Apple|apple|0",
+          "label": "Apple (iCloud+ 2TB or Apple TV+)",
+          "action": "cancel",
+          "annual": 107.88,
+          "expected": 97.09,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "duplicate: Apple charge matches Disney+'s price: possibly bought twice; billed via apple, easy to miss on a statement"
+        },
+        {
+          "stream": "Google One|google_play|0",
+          "label": "Google One",
+          "action": "cancel",
+          "annual": 95.88,
+          "expected": 86.29,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "duplicate: two cloud storage services; billed via google_play, easy to miss on a statement"
+        },
+        {
+          "stream": "Apple|apple|1",
+          "label": "Apple",
+          "action": "cancel",
+          "annual": 59.88,
+          "expected": 53.89,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "duplicate: Apple charge matches Paramount+'s price: possibly bought twice; billed via apple, easy to miss on a statement"
+        },
+        {
+          "stream": "Deliveroo Plus|direct|0",
+          "label": "Deliveroo Plus",
+          "action": "confirm_keep",
+          "annual": 41.88,
+          "expected": 0.0,
+          "method": "in_app",
+          "automatable": "yes",
+          "why": "started 2026-02-16 after a trial/intro offer"
+        },
+        {
+          "stream": "New York Times|direct|0",
+          "label": "New York Times",
+          "action": "confirm_keep",
+          "annual": 37.8,
+          "expected": 0.0,
+          "method": null,
+          "automatable": "unknown",
+          "why": "started 2026-01-13 after a trial/intro offer"
+        }
+      ],
+      "price_rises": [
+        {
+          "stream": "Sky|direct|0",
+          "label": "Sky",
+          "kind": "subscription",
+          "old": 35.0,
+          "new": 38.0,
+          "pct": 8.6,
+          "annual_increase": 36.0,
+          "since": "2026-04-09"
+        },
+        {
+          "stream": "Amazon Prime|direct|0",
+          "label": "Amazon Prime",
+          "kind": "subscription",
+          "old": 8.99,
+          "new": 9.99,
+          "pct": 11.1,
+          "annual_increase": 12.0,
+          "since": "2026-02-19"
+        },
+        {
+          "stream": "Council Tax|direct|0",
+          "label": "Council Tax",
+          "kind": "bill",
+          "old": 171.0,
+          "new": 179.5,
+          "pct": 5.0,
+          "annual_increase": 102.0,
+          "since": "2026-04-01"
+        },
+        {
+          "stream": "BT|direct|0",
+          "label": "BT",
+          "kind": "bill",
+          "old": 45.99,
+          "new": 49.49,
+          "pct": 7.6,
+          "annual_increase": 42.0,
+          "since": "2026-04-06"
+        }
+      ],
+      "active_subscriptions": 19,
+      "annual_subscription_spend": 2676.1,
+      "back_in_pocket_identified": 263.64,
+      "back_in_pocket_expected": 237.27,
+      "price_rise_exposure": 192.0,
+      "assumptions": {
+        "success_rate_by_route": {
+          "online": 0.95,
+          "online_2fa": 0.9,
+          "app_store": 0.9,
+          "in_app": 0.85,
+          "email": 0.8,
+          "chat": 0.8,
+          "phone": 0.7,
+          "None": 0.6
+        },
+        "horizon": "next 12 months at latest price"
+      }
+    }
+  },
+  "forgotten_thresholds": {
+    "1": {
+      "tp": 1,
+      "fp": 8,
+      "fn": 2,
+      "precision": 0.111,
+      "recall": 0.333,
+      "f1": 0.167,
+      "false_positives": [
+        "Apple",
+        "Apple",
+        "Google One",
+        "YouTube Premium",
+        "Duolingo",
+        "Paramount+",
+        "Deliveroo Plus",
+        "New York Times"
+      ],
+      "false_negatives": [
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    },
+    "2": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.333,
+      "recall": 0.333,
+      "f1": 0.333,
+      "false_positives": [
+        "Apple",
+        "Google One"
+      ],
+      "false_negatives": [
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    },
+    "3": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.333,
+      "recall": 0.333,
+      "f1": 0.333,
+      "false_positives": [
+        "Apple",
+        "Google One"
+      ],
+      "false_negatives": [
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    }
+  },
+  "seeds": null
+}

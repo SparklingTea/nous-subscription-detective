@@ -1,0 +1,386 @@
+{
+  "main": {
+    "merchant": {
+      "accuracy": 0.372,
+      "n": 804,
+      "accuracy_catalogue": 0.893,
+      "accuracy_long_tail": 0.031,
+      "distinct_merchants": 32,
+      "distinct_merchants_correct": 17,
+      "errors": [
+        {
+          "label": "Bee Network",
+          "predicted": "Bee Network Bus",
+          "count": 142
+        },
+        {
+          "label": "Greggs",
+          "predicted": "Greggs Cd",
+          "count": 92
+        },
+        {
+          "label": "Costa",
+          "predicted": "Costa Coffee Cd",
+          "count": 60
+        },
+        {
+          "label": "Junior Football Club",
+          "predicted": "Junior Football Club Cd",
+          "count": 46
+        },
+        {
+          "label": "Aldi",
+          "predicted": "Aldi Cd",
+          "count": 44
+        },
+        {
+          "label": "Nationwide",
+          "predicted": "Nationwide Mortgage",
+          "count": 13
+        },
+        {
+          "label": "The Gym Group",
+          "predicted": "Gym",
+          "count": 13
+        },
+        {
+          "label": "M Kowalski",
+          "predicted": "M Kowalski Cleaning",
+          "count": 13
+        },
+        {
+          "label": "Uber One",
+          "predicted": "Uber",
+          "count": 13
+        },
+        {
+          "label": "Dropbox",
+          "predicted": "Dropbox Cd",
+          "count": 13
+        },
+        {
+          "label": "YouTube Premium",
+          "predicted": "Youtube",
+          "count": 12
+        },
+        {
+          "label": "Amazon Kindle Unlimited",
+          "predicted": "Amazon",
+          "count": 12
+        },
+        {
+          "label": "Council Tax",
+          "predicted": "Manchester City Council",
+          "count": 11
+        },
+        {
+          "label": "New York Times",
+          "predicted": "Nytimes",
+          "count": 10
+        },
+        {
+          "label": "Deliveroo Plus",
+          "predicted": "Deliveroo",
+          "count": 9
+        },
+        {
+          "label": "Klarna",
+          "predicted": "Klarna Zara",
+          "count": 2
+        }
+      ]
+    },
+    "subscription_detection": {
+      "tp": 14,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.875,
+      "recall": 0.778,
+      "f1": 0.824,
+      "false_positives": [
+        {
+          "label": "Junior Football Club Cd",
+          "cadence": "weekly",
+          "n": 46,
+          "truth": "other"
+        },
+        {
+          "label": "Klarna",
+          "cadence": "monthly",
+          "n": 3,
+          "truth": "other"
+        }
+      ],
+      "false_negatives": [
+        {
+          "stream": "kindle",
+          "merchant": "Amazon Kindle Unlimited",
+          "note": "Shares the generic AMZN descriptor with shopping"
+        },
+        {
+          "stream": "duolingo",
+          "merchant": "Duolingo",
+          "note": "Annual via Google Play, single charge"
+        },
+        {
+          "stream": "uber_one",
+          "merchant": "Uber One",
+          "note": "Descriptor is 'UBER *ONE', not 'UBER ONE'"
+        },
+        {
+          "stream": "deliveroo_plus",
+          "merchant": "Deliveroo Plus",
+          "note": "Descriptor truncated by the bank"
+        }
+      ]
+    },
+    "kind_confusion": [
+      {
+        "truth": "bill",
+        "predicted": "bill",
+        "count": 2
+      },
+      {
+        "truth": "bill",
+        "predicted": "missed",
+        "count": 2
+      },
+      {
+        "truth": "bill",
+        "predicted": "other",
+        "count": 1
+      },
+      {
+        "truth": "other",
+        "predicted": "missed",
+        "count": 1
+      },
+      {
+        "truth": "other",
+        "predicted": "other",
+        "count": 2
+      },
+      {
+        "truth": "other",
+        "predicted": "subscription",
+        "count": 2
+      },
+      {
+        "truth": "subscription",
+        "predicted": "missed",
+        "count": 4
+      },
+      {
+        "truth": "subscription",
+        "predicted": "subscription",
+        "count": 14
+      }
+    ],
+    "cadence_accuracy": 1.0,
+    "active_accuracy": 1.0,
+    "flags": {
+      "price_rise": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positives": [],
+        "false_negatives": []
+      },
+      "duplicate": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "false_positives": [],
+        "false_negatives": [
+          "Disney+ (nan)",
+          "Apple (Second Disney+ bought in-app on a child's iPad (statement just says Apple, \u00a38.99))",
+          "Dropbox (Old Dropbox Plus alongside Google One)",
+          "Google One (nan)"
+        ]
+      },
+      "trial_converted": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.333,
+        "recall": 0.25,
+        "f1": 0.286,
+        "false_positives": [
+          "Apple",
+          "Apple"
+        ],
+        "false_negatives": [
+          "Apple (Calm annual after 7-day trial; single charge)",
+          "Deliveroo Plus (Descriptor truncated by the bank)",
+          "New York Times (USD-billed intro rate; not in catalogue)"
+        ]
+      },
+      "forgotten": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.5,
+        "recall": 0.333,
+        "f1": 0.4,
+        "false_positives": [
+          "Apple"
+        ],
+        "false_negatives": [
+          "Dropbox (Old Dropbox Plus alongside Google One)",
+          "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+        ]
+      }
+    },
+    "summary": {
+      "actions": [
+        {
+          "stream": "Apple|apple|0",
+          "label": "Apple (iCloud+ 2TB or Apple TV+)",
+          "action": "cancel",
+          "annual": 107.88,
+          "expected": 97.09,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "started as a free trial / intro offer; billed via apple, easy to miss on a statement"
+        },
+        {
+          "stream": "Apple|apple|1",
+          "label": "Apple",
+          "action": "cancel",
+          "annual": 59.88,
+          "expected": 53.89,
+          "method": "online_2fa",
+          "automatable": "with_handoff",
+          "why": "started as a free trial / intro offer; billed via apple, easy to miss on a statement"
+        },
+        {
+          "stream": "Paramount+|direct|0",
+          "label": "Paramount+",
+          "action": "confirm_keep",
+          "annual": 59.88,
+          "expected": 0.0,
+          "method": "online",
+          "automatable": true,
+          "why": "started 2026-06-27 after a trial/intro offer"
+        }
+      ],
+      "price_rises": [
+        {
+          "stream": "Sky|direct|0",
+          "label": "Sky",
+          "kind": "subscription",
+          "old": 35.0,
+          "new": 38.0,
+          "pct": 8.6,
+          "annual_increase": 36.0,
+          "since": "2026-04-09"
+        },
+        {
+          "stream": "Amazon Prime|direct|0",
+          "label": "Amazon Prime",
+          "kind": "subscription",
+          "old": 8.99,
+          "new": 9.99,
+          "pct": 11.1,
+          "annual_increase": 12.0,
+          "since": "2026-02-19"
+        },
+        {
+          "stream": "Manchester City Council|direct|0",
+          "label": "Manchester City Council",
+          "kind": "other",
+          "old": 171.0,
+          "new": 179.5,
+          "pct": 5.0,
+          "annual_increase": 102.0,
+          "since": "2026-04-01"
+        },
+        {
+          "stream": "BT|direct|0",
+          "label": "BT",
+          "kind": "bill",
+          "old": 45.99,
+          "new": 49.49,
+          "pct": 7.6,
+          "annual_increase": 42.0,
+          "since": "2026-04-06"
+        }
+      ],
+      "active_subscriptions": 15,
+      "annual_subscription_spend": 2368.47,
+      "back_in_pocket_identified": 167.76,
+      "back_in_pocket_expected": 150.98,
+      "price_rise_exposure": 192.0,
+      "assumptions": {
+        "success_rate_by_route": {
+          "online": 0.95,
+          "online_2fa": 0.9,
+          "app_store": 0.9,
+          "in_app": 0.85,
+          "email": 0.8,
+          "chat": 0.8,
+          "phone": 0.7,
+          "None": 0.6
+        },
+        "horizon": "next 12 months at latest price"
+      }
+    }
+  },
+  "forgotten_thresholds": {
+    "1": {
+      "tp": 1,
+      "fp": 5,
+      "fn": 2,
+      "precision": 0.167,
+      "recall": 0.333,
+      "f1": 0.222,
+      "false_positives": [
+        "Apple",
+        "Apple",
+        "Google One",
+        "YouTube Premium",
+        "Paramount+"
+      ],
+      "false_negatives": [
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    },
+    "2": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.5,
+      "recall": 0.333,
+      "f1": 0.4,
+      "false_positives": [
+        "Apple"
+      ],
+      "false_negatives": [
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    },
+    "3": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_positives": [],
+      "false_negatives": [
+        "Apple (Second Disney+ bought in-app on a child's iPad (statement just says Apple, \u00a38.99))",
+        "Dropbox (Old Dropbox Plus alongside Google One)",
+        "PlayStation Plus (Child stopped playing in spring: no signal in bank data)"
+      ]
+    }
+  },
+  "seeds": null
+}

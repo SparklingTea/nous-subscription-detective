@@ -1,0 +1,279 @@
+{
+  "runs": [
+    {
+      "scenario": "Netflix: plain flow",
+      "merchant": "Netflix",
+      "status": "cancelled",
+      "steps": 5,
+      "trace": [
+        {
+          "step": 1,
+          "url": "/netflix",
+          "title": "Sign in",
+          "action": "sign in"
+        },
+        {
+          "step": 2,
+          "url": "/netflix/home",
+          "title": "Home",
+          "action": "click 'Account'"
+        },
+        {
+          "step": 3,
+          "url": "/netflix/account",
+          "title": "Account",
+          "action": "click 'Cancel membership'"
+        },
+        {
+          "step": 4,
+          "url": "/netflix/cancel",
+          "title": "Cancel your membership?",
+          "action": "click 'Finish cancellation'"
+        },
+        {
+          "step": 5,
+          "url": "/netflix/cancel",
+          "title": "Membership cancelled",
+          "action": "done"
+        }
+      ],
+      "evidence": "Membership cancelled Your membership has been cancelled. It ends on 7 November 2026.",
+      "ends_on": "7 November 2026",
+      "retention_screens_declined": 0,
+      "handoff_message": null
+    },
+    {
+      "scenario": "Amazon Prime: retention maze",
+      "merchant": "Amazon Prime",
+      "status": "cancelled",
+      "steps": 8,
+      "trace": [
+        {
+          "step": 1,
+          "url": "/prime",
+          "title": "Sign in",
+          "action": "sign in"
+        },
+        {
+          "step": 2,
+          "url": "/prime/home",
+          "title": "Your Account",
+          "action": "click 'Prime membership'"
+        },
+        {
+          "step": 3,
+          "url": "/prime/membership",
+          "title": "Prime membership",
+          "action": "click 'Manage membership' (ignored: Explore benefits)"
+        },
+        {
+          "step": 4,
+          "url": "/prime/manage",
+          "title": "Manage membership",
+          "action": "click 'End membership' (ignored: Switch to monthly)"
+        },
+        {
+          "step": 5,
+          "url": "/prime/end/1",
+          "title": "Before you go, don't lose your benefits",
+          "action": "click 'Continue to cancel' (ignored: Keep my benefits, Remind me 3 days before)"
+        },
+        {
+          "step": 6,
+          "url": "/prime/end/2",
+          "title": "Would you like a cheaper option?",
+          "action": "click 'Continue to cancel' (ignored: Switch to monthly and keep Prime)"
+        },
+        {
+          "step": 7,
+          "url": "/prime/end/3",
+          "title": "Your benefits end on 11 March 2027",
+          "action": "click 'End my benefits' (ignored: Keep my membership)"
+        },
+        {
+          "step": 8,
+          "url": "/prime/end/3",
+          "title": "Membership cancelled",
+          "action": "done"
+        }
+      ],
+      "evidence": "Membership cancelled Your Prime membership has been cancelled. Benefits end on 11 March 2027.",
+      "ends_on": "11 March 2027",
+      "retention_screens_declined": 5,
+      "handoff_message": null
+    },
+    {
+      "scenario": "Apple Music via Apple: 2FA hand-off",
+      "merchant": "Apple",
+      "status": "cancelled",
+      "steps": 7,
+      "trace": [
+        {
+          "step": 1,
+          "url": "/apple",
+          "title": "Sign in",
+          "action": "sign in"
+        },
+        {
+          "step": 2,
+          "url": "/apple/verify",
+          "title": "Two-factor authentication",
+          "action": "pause: asked member for 2FA code"
+        },
+        {
+          "step": 3,
+          "url": "/apple/home",
+          "title": "Apple Account",
+          "action": "click 'Subscriptions'"
+        },
+        {
+          "step": 4,
+          "url": "/apple/subscriptions",
+          "title": "Subscriptions",
+          "action": "click 'Apple Music \u00a310.99/month'"
+        },
+        {
+          "step": 5,
+          "url": "/apple/sub/music",
+          "title": "Apple Music",
+          "action": "click 'Cancel Subscription' (ignored: Change to annual and save)"
+        },
+        {
+          "step": 6,
+          "url": "/apple/sub/music",
+          "title": "Confirm cancellation",
+          "action": "click 'Confirm'"
+        },
+        {
+          "step": 7,
+          "url": "/apple/sub/music",
+          "title": "Subscription cancelled",
+          "action": "done"
+        }
+      ],
+      "evidence": "Subscription cancelled Apple Music has been cancelled. Access continues until 3 November 2026.",
+      "ends_on": "3 November 2026",
+      "retention_screens_declined": 1,
+      "handoff_message": null
+    },
+    {
+      "scenario": "Adobe: early termination fee, no consent",
+      "merchant": "Adobe",
+      "status": "handoff_consent",
+      "steps": 7,
+      "trace": [
+        {
+          "step": 1,
+          "url": "/adobe",
+          "title": "Sign in",
+          "action": "sign in"
+        },
+        {
+          "step": 2,
+          "url": "/adobe/home",
+          "title": "Adobe account",
+          "action": "click 'Plans'"
+        },
+        {
+          "step": 3,
+          "url": "/adobe/plans",
+          "title": "Plans",
+          "action": "click 'Manage plan'"
+        },
+        {
+          "step": 4,
+          "url": "/adobe/manage",
+          "title": "Manage plan",
+          "action": "click 'Cancel your plan' (ignored: Upgrade)"
+        },
+        {
+          "step": 5,
+          "url": "/adobe/cancel/reason",
+          "title": "Why are you cancelling?",
+          "action": "click 'Continue', reason 'I no longer need it'"
+        },
+        {
+          "step": 6,
+          "url": "/adobe/cancel/reason",
+          "title": "Wait! Here's 2 months free",
+          "action": "click 'No thanks' (ignored: Accept offer)"
+        },
+        {
+          "step": 7,
+          "url": "/adobe/cancel/review",
+          "title": "Review and confirm",
+          "action": "STOP: money at stake, asking member"
+        }
+      ],
+      "evidence": "Review and confirm Because you are cancelling an annual plan early, an early termination fee of \u00a329.94 will be charged to your card. Confirm cancellation Keep my plan",
+      "ends_on": null,
+      "retention_screens_declined": 2,
+      "handoff_message": "Before I confirm cancelling Adobe: the site says \"Review and confirm Because you are cancelling an annual plan early, an early termination fee of \u00a329.94 will be charged to your card.\" Do you want me to go ahead?"
+    },
+    {
+      "scenario": "Adobe: member said yes to the fee",
+      "merchant": "Adobe",
+      "status": "cancelled",
+      "steps": 8,
+      "trace": [
+        {
+          "step": 1,
+          "url": "/adobe",
+          "title": "Sign in",
+          "action": "sign in"
+        },
+        {
+          "step": 2,
+          "url": "/adobe/home",
+          "title": "Adobe account",
+          "action": "click 'Plans'"
+        },
+        {
+          "step": 3,
+          "url": "/adobe/plans",
+          "title": "Plans",
+          "action": "click 'Manage plan'"
+        },
+        {
+          "step": 4,
+          "url": "/adobe/manage",
+          "title": "Manage plan",
+          "action": "click 'Cancel your plan' (ignored: Upgrade)"
+        },
+        {
+          "step": 5,
+          "url": "/adobe/cancel/reason",
+          "title": "Why are you cancelling?",
+          "action": "click 'Continue', reason 'I no longer need it'"
+        },
+        {
+          "step": 6,
+          "url": "/adobe/cancel/reason",
+          "title": "Wait! Here's 2 months free",
+          "action": "click 'No thanks' (ignored: Accept offer)"
+        },
+        {
+          "step": 7,
+          "url": "/adobe/cancel/review",
+          "title": "Review and confirm",
+          "action": "click 'Confirm cancellation' (ignored: Keep my plan)"
+        },
+        {
+          "step": 8,
+          "url": "/adobe/cancel/review",
+          "title": "Plan cancelled",
+          "action": "done"
+        }
+      ],
+      "evidence": "Plan cancelled Your plan has been cancelled. A fee of \u00a329.94 has been charged.",
+      "ends_on": null,
+      "retention_screens_declined": 3,
+      "handoff_message": null
+    }
+  ],
+  "handoffs": {
+    "Sky (phone only)": "CALL SCRIPT: cancel Sky TV\n1. 'I'm calling to give notice to cancel my Sky TV subscription, effective 25 November 2026.'\n2. Have ready: account number, postcode, last payment amount (\u00a338.00).\n3. If offered a retention deal: only accept if the new price is \u00a325.00/month or less with no new minimum term.\n4. Ask for: a cancellation reference, the final bill date, and any early termination charge in writing.\n5. If the agent refuses or stalls, ask for the complaints procedure; note time and name.",
+    "The Times (email notice)": "Subject: Notice of cancellation: The Times digital subscription ([account number])\n\nHello,\n\nPlease cancel my The Times digital subscription subscription, account [account number], at the earliest date my terms allow, and confirm in writing the end date, any final charge, and that no further payments will be taken.\n\nThank you,\nA. Member",
+    "Any card subscription (bank backstop)": "I'd like to stop the recurring card payment (continuous payment authority) to NOWTV.COM. The most recent payment was \u00a39.99 on 16 October 2026. I have withdrawn my consent for future payments, so please block any further payments to this merchant on my card."
+  }
+}
