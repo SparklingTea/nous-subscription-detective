@@ -4,8 +4,6 @@ A working prototype of the logic behind a subscription-cancelling agent: read a 
 recurring payments, clean up the merchant names, flag what's worth acting on, work out how each one is
 actually cancelled, and cancel the ones that can be automated safely. It finishes with a **£ back in pocket** figure.
 
-Built as a take-home for the Product Builder role at Nous.
-
 ```bash
 pip install -r requirements.txt
 python data/generate.py && python data/generate.py --holdout      # two synthetic households + labels
@@ -25,7 +23,7 @@ streamlit run app.py                                              # everything a
 | Active subscriptions found | 20, costing **£4,937/yr** (£2,339 of that is one HelloFresh box a week) |
 | Suggested cancellations | Apple Music (left running next to Spotify after its trial), an old Netflix account still billing through PayPal, Deliveroo Plus with no orders since April, Google One next to iCloud+ |
 | **Back in pocket** | **£265/yr identified, £240/yr expected** once each cancellation is discounted by an assumed success rate for its route |
-| Also surfaced, not counted | 3 "trial converted, still want it?" checks (NOW, Audible, HelloFresh) and £190/yr of price rises across 3 subscriptions and 4 bills. The bill rises are the trigger for Nous's switching products |
+| Also surfaced, not counted | 3 "trial converted, still want it?" checks (NOW, Audible, HelloFresh) and £190/yr of price rises across 3 subscriptions and 4 bills. The bill rises are a natural trigger to switch provider |
 
 ### Precision / recall
 
@@ -68,7 +66,7 @@ error analysis, so it's no longer blind. Its value is the list of what broke:
 3. **The billing channel matters more than the brand.** Netflix through PayPal, Disney+ through Apple and YouTube
    through Google each cancel somewhere different. Every stream records its channel because that decides the route.
 4. **Price rises are the most reliable signal (F1 1.00 on both households) and the least glamorous.** They're
-   also where subscriptions overlap with Nous's bills products: 4 of the 7 rises on the dev set were council tax,
+   also where subscriptions overlap with household bills: 4 of the 7 rises on the dev set were council tax,
    broadband, mobile and TV licence.
 
 ## The hard half: how UK subscriptions actually get cancelled
@@ -131,7 +129,7 @@ CSV ─► loader (Monzo / Starling / Barclays / Lloyds / HSBC layouts)
 - **The success rates behind "expected £" are assumptions** (online 95%, phone 70% and so on), not measured.
 - **The agent runs on mocks, not real sites.** Production would drive Playwright through the same `fetch`/`submit` interface.
 
-## What I'd do in week one at Nous
+## Next steps
 
 1. Run the detector over a sample of real Open Banking data and hand-label 200 streams, oversampling platform
    billers (Apple, Google, PayPal, Amazon), BNPL, and long-tail merchants.

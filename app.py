@@ -55,7 +55,7 @@ with tab_money:
     if not acts.empty:
         order = {"cancel": 0, "review_duplicate": 1, "confirm_keep": 2}
         acts = acts.sort_values(by="action", key=lambda s: s.map(order))
-        st.subheader("What Nora would say")
+        st.subheader("What the assistant would suggest")
         for a in acts.itertuples():
             verb = {"cancel": "💸 Cancel", "review_duplicate": "🔁 Pick one", "confirm_keep": "❓ Still want"}[a.action]
             st.markdown(f"**{verb} {a.label}**: £{a.annual:,.2f}/yr. _{a.why}_. Route: `{a.method}`, "

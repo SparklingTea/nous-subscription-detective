@@ -15,9 +15,9 @@ OUT = Path(__file__).resolve().parent.parent / "outputs"
 
 def member_replies_with_code(message: str) -> str:
     """Stands in for the member answering on WhatsApp: reads the code the mock 'sent to their phone'."""
-    print(f"    Nora -> member: {message}")
+    print(f"    assistant -> member: {message}")
     code = mock_sites.LAST_CODE.get("apple")
-    print(f"    member -> Nora: {code}")
+    print(f"    member -> assistant: {code}")
     return code
 
 

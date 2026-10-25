@@ -101,7 +101,7 @@ def build(seed: int) -> Household:
     h.monthly("oxfam", "Oxfam", ["OXFAM"], 10.00, DD, 5, jitter=0, business=True)
     h.label("oxfam", "Oxfam", "other", "monthly", True, note="Charity direct debit: recurring but not a subscription")
 
-    # --- Household bills (Nous switches these, but they're not 'subscriptions') ---
+    # --- Household bills (switchable, but not 'subscriptions') ---
     h.monthly("ctax", "Council Tax", ["LB ISLINGTON CTAX"], price_step(152.40, 160.10, date(2026, 4, 1)), DD, 15,
               jitter=0, business=True, skip_months=(2, 3))
     h.label("ctax", "Council Tax", "bill", "monthly", True, flags=("price_rise",), note="10 instalments: Feb/Mar gap")
